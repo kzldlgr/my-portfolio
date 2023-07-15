@@ -2,6 +2,6 @@
 
 export default function Portfolio() {
   return (
-    <div>Portfolio</div>
+    <section className="section" id="portfolio">Portfolio</section>
   )
 }

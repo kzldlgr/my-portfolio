@@ -1,6 +1,6 @@
 
 export default function Contact() {
   return (
-    <div>Contact</div>
+    <section className="section" id="contact">Contact</section>
   )
 }
