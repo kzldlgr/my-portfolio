@@ -55,6 +55,9 @@
   body {
     @apply font-secondary text-lg leading-8 text-white;
   }
+  .h1 {
+    @apply text-[54px] lg:text-[96px] font-primary font-bold capitalize leading-[120%] tracking-[-0.05em] mb-2;
+  }
   .h2 {
     @apply font-primary text-[32px] mb-6 tracking-[10%] uppercase;
   }

@@ -1,6 +1,6 @@
 import Header from './components/Header';
 import Banner from './components/Banner';
-import Nav from './components/Nav';
+// import Nav from './components/Nav';
 import About from './components/About';
 import Experience from './components/Experience';
 import Portfolio from './components/Portfolio';
@@ -13,7 +13,7 @@ function App() {
     <div className='bg-white text-black overflow-hidden mx-auto'>
       <Header />
       <Banner />
-      <Nav />
+      {/* <Nav /> */}
       <About />
       <Experience />
       <Portfolio />
