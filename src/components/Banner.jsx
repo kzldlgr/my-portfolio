@@ -1,5 +1,4 @@
 import Image from '../assets/image/ImageTransparent.png'
-import { TypeAnimation } from 'react-type-animation'
 import { motion } from 'framer-motion'
 import { fadeIn, transition1 } from '../variant'
 
@@ -11,10 +10,10 @@ export default function Banner() {
         <div className='flex flex-col gap-y-8 lg:flex-row lg:items-center lg:gap-x-4'>
           {/* image */}
           <motion.div
-              variants={fadeIn('down', 0.3)}
-              initial='hidden'
-              whileInView={'show'}
-              viewport={{ once: false, amount: 0.7 }}
+            variants={fadeIn('down', 0.3)}
+            initial='hidden'
+            whileInView={'show'}
+            viewport={{ once: false, amount: 0.7 }}
             className='hidden lg:flex flex-1 max-w-[320px] lg:max-w-[1000px] rounded-full overflow-hidden'>
             <motion.img
               whileHover={{ scale: 1.3 }}
@@ -43,35 +42,27 @@ export default function Banner() {
               whileInView={'show'}
               viewport={{ once: false, amount: 0.7 }}
               className='mb-6 text-[36px] lg:text-[50px] font-secondary font-semibold uppercase leading-[1] my-2'>
-              <TypeAnimation sequence={[
-                'Full-Stack Web Developer',
-                1000,
-              ]}
-                speed={1}
-                className='text-accent'
-                wrapper='span'
-                repeat={Infinity}
-              />
-            </motion.div>
-            <motion.p
-              variants={fadeIn('up', 0.3)}
-              initial='hidden'
-              whileInView={'show'}
-              viewport={{ once: false, amount: 0.7 }}
-              className='mb-8 max-w-xl mx-auto lg:mx-0 text-2xl'>
-              High level knowledge and experience in Web Development and producing quality work.
-            </motion.p>
-            <motion.div
-              variants={fadeIn('up', 0.3)}
-              initial='hidden'
-              whileInView={'show'}
-              viewport={{ once: false, amount: 0.7 }}
-              className='flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0'>
-              <button className='py-[18px] px-[50px] h-[66px] flex items-center justify-center text-base uppercase font-secondary font-semibold bg-primary text-white'>Hire me</button>
-            </motion.div>
-          </div>
+              <h1 className='text-accent'>Full Stack Web Developer</h1>
+          </motion.div>
+          <motion.p
+            variants={fadeIn('up', 0.3)}
+            initial='hidden'
+            whileInView={'show'}
+            viewport={{ once: false, amount: 0.7 }}
+            className='mb-8 max-w-xl mx-auto lg:mx-0 text-2xl'>
+            High level knowledge and experience in Web Development and producing quality work.
+          </motion.p>
+          <motion.div
+            variants={fadeIn('up', 0.3)}
+            initial='hidden'
+            whileInView={'show'}
+            viewport={{ once: false, amount: 0.7 }}
+            className='flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0'>
+            <button className='py-[18px] px-[50px] h-[66px] flex items-center justify-center text-base uppercase font-secondary font-semibold bg-primary text-white'>Hire me</button>
+          </motion.div>
         </div>
       </div>
-    </section>
+    </div>
+    </section >
   )
 }

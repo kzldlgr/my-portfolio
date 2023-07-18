@@ -4,7 +4,6 @@ import Link from '../assets/icons/link.png';
 import Delete from '../assets/icons/delete.png';
 import facebook from '../assets/icons/facebook.png';
 import github from '../assets/icons/github.png';
-import instagram from '../assets/icons/instagram.png';
 import linkedin from '../assets/icons/linkedin.png';
 // import { transition1 } from '../variant'
 
@@ -46,7 +45,6 @@ export default function Socials() {
         className='absolute flex flex-col gap-2 '>
         <li><a href="/" target="_blank"></a><img src={linkedin} className='w-12 h-12 lg:w-16 lg:h-16 hover:scale-125 duration-200' /></li>
         <li><a href="/" target="_blank"></a><img src={github} className='w-12 h-12 lg:w-16 lg:h-16 hover:scale-125 duration-200' /></li>
-        <li><a href="/" target="_blank"></a><img src={instagram} className='w-12 h-12 lg:w-16 lg:h-16 hover:scale-125 duration-200' /></li>
         <li><a href="/" target="_blank"></a><img src={facebook} className='w-12 h-12 lg:w-16 lg:h-16 hover:scale-125 duration-200' /></li>
       </motion.ul>
 
