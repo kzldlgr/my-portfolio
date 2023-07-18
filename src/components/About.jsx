@@ -17,14 +17,13 @@ export default function About() {
             speed={100}
             wrapper='span'
             repeat={Infinity}
-            className=""
           />
-          <div className="flex flex-row gap-2 mt-4">
+          <div className="lg:flex flex-row gap-2 mt-4">
             <Link
               to="portfolio"
               smooth={true}
               spy={true}
-              className="cursor-pointer py-[18px] px-[50px] h-[42px] flex items-center justify-center text-base uppercase font-secondary font-semibold bg-primary text-white gap-1">
+              className="cursor-pointer py-[18px] px-[50px] h-[42px] flex items-center justify-center text-base uppercase font-secondary font-semibold bg-primary text-white gap-1 mb-4 lg:mb-0">
               View my projects <TiExport />
             </Link>
             <a href={resume} download="Kazel Deligero (Resume)" className="py-[18px] px-[50px] h-[42px] flex items-center justify-center text-base uppercase font-secondary font-semibold  text-black border border-black gap-1">Download CV<TiDownload /></a>

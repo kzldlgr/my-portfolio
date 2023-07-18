@@ -1,7 +1,8 @@
 import Image from '../assets/image/ImageTransparent.png'
 import { motion } from 'framer-motion'
 import { fadeIn, transition1 } from '../variant'
-
+import { TiLocationArrow } from 'react-icons/ti';
+import { Link } from 'react-scroll';
 
 export default function Banner() {
   return (
@@ -43,26 +44,30 @@ export default function Banner() {
               viewport={{ once: false, amount: 0.7 }}
               className='mb-6 text-[36px] lg:text-[50px] font-secondary font-semibold uppercase leading-[1] my-2'>
               <h1 className='text-accent'>Full Stack Web Developer</h1>
-          </motion.div>
-          <motion.p
-            variants={fadeIn('up', 0.3)}
-            initial='hidden'
-            whileInView={'show'}
-            viewport={{ once: false, amount: 0.7 }}
-            className='mb-8 max-w-xl mx-auto lg:mx-0 text-2xl'>
-            High level knowledge and experience in Web Development and producing quality work.
-          </motion.p>
-          <motion.div
-            variants={fadeIn('up', 0.3)}
-            initial='hidden'
-            whileInView={'show'}
-            viewport={{ once: false, amount: 0.7 }}
-            className='flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0'>
-            <button className='py-[18px] px-[50px] h-[66px] flex items-center justify-center text-base uppercase font-secondary font-semibold bg-primary text-white'>Hire me</button>
-          </motion.div>
+            </motion.div>
+            <motion.p
+              variants={fadeIn('up', 0.3)}
+              initial='hidden'
+              whileInView={'show'}
+              viewport={{ once: false, amount: 0.7 }}
+              className='mb-8 max-w-xl mx-auto lg:mx-0 text-2xl'>
+              High level knowledge and experience in Web Development and producing quality work.
+            </motion.p>
+            <motion.div
+              variants={fadeIn('up', 0.3)}
+              initial='hidden'
+              whileInView={'show'}
+              viewport={{ once: false, amount: 0.7 }}
+              className='flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0'>
+              <Link
+                to="contact"
+                smooth={true}
+                spy={true}
+                className='cursor-pointer py-[18px] px-[50px] h-[66px] flex items-center justify-center text-base uppercase font-secondary font-semibold bg-primary text-white'>Hire me <TiLocationArrow className='w-6 h-6 pb-1' /></Link>
+            </motion.div>
+          </div>
         </div>
       </div>
-    </div>
     </section >
   )
 }

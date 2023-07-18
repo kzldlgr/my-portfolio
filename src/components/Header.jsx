@@ -31,12 +31,20 @@ export default function Header() {
             About
           </Link>
           <Link
-            to='experience'
+            to='skills'
             activeClass="active-nav"
             smooth={true}
             spy={true}
             className='cursor-pointer w-full px-4 h-[60px] flex items-center justify-center'>
-            Experience
+            Skills
+          </Link>
+          <Link
+            to='qualifications'
+            activeClass="active-nav"
+            smooth={true}
+            spy={true}
+            className='cursor-pointer w-full px-4 h-[60px] flex items-center justify-center'>
+            Qualifications
           </Link>
           <Link
             to='portfolio'

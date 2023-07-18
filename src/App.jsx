@@ -2,9 +2,10 @@ import Header from './components/Header';
 import Banner from './components/Banner';
 // import Nav from './components/Nav';
 import About from './components/About';
-import Experience from './components/Experience';
+import Qualifications from './components/Qualifications';
 import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
+import Skills from './components/Skills';
 
 function App() {
 
@@ -15,7 +16,8 @@ function App() {
       <Banner />
       {/* <Nav /> */}
       <About />
-      <Experience />
+      <Skills />
+      <Qualifications />
       <Portfolio />
       <Contact />
       <div className='h-[4000px]'></div>
