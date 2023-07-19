@@ -17,8 +17,8 @@ export default function About() {
           className="flex flex-col">
           <h2 className="h2 text-accent">About me</h2>
           <TypeAnimation sequence={[
-            `I'm Kazel and I am a Software Engineer. I went to a bootcamp at Avion School where I learned HTML5, Javascript, React JS and Ruby on Rails and created various projects (view). Previously I am a Senior System Support Specialist at Bounty Agro Ventures, Inc. where I managed POS (point of sales) system/pheriperals of more than 1000 outlets of Chooks To Go.`,
-            2000,
+            `I'm Kazel and I am a Software Engineer. I graduated at Colegio De San Lorenzo with a degree of BS Computer Science. I went to a bootcamp at Avion School where I learned HTML5, Javascript, React JS and Ruby on Rails and created various projects. Previously I am a Senior System Support Specialist at Bounty Agro Ventures, Inc. where I managed POS (point of sales) system/pheriperals of more than 1000 outlets of Chooks To Go.`,
+          2000
           ]}
             speed={100}
             wrapper='span'
