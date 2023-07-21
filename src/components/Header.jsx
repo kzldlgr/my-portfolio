@@ -47,12 +47,12 @@ export default function Header() {
             Qualifications
           </Link>
           <Link
-            to='portfolio'
+            to='project'
             activeClass="active-nav"
             smooth={true}
             spy={true}
             className='cursor-pointer w-full px-4 h-[60px] flex items-center justify-center'>
-            Portfolio
+            Projects
           </Link>
           <Link
             to='contact'

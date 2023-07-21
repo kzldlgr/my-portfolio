@@ -3,7 +3,7 @@ import Banner from './components/Banner';
 // import Nav from './components/Nav';
 import About from './components/About';
 import Qualifications from './components/Qualifications';
-import Portfolio from './components/Portfolio';
+import Project from './components/Project';
 import Contact from './components/Contact';
 import Skills from './components/Skills';
 
@@ -18,7 +18,7 @@ function App() {
       <About />
       <Skills />
       <Qualifications />
-      <Portfolio />
+      <Project />
       <Contact />
       {/* <div className='h-[4000px]'></div> */}
     </div>
