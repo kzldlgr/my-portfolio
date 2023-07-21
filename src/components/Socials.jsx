@@ -42,7 +42,7 @@ export default function Socials() {
             }
           }
         }}
-        className='absolute flex flex-col gap-2 bg-black'>
+        className='absolute flex flex-col gap-2'>
         <li><a href="/" target="_blank"></a><img src={linkedin} className='w-12 h-12 lg:w-16 lg:h-16 hover:scale-125 duration-200' /></li>
         <li><a href="/" target="_blank"></a><img src={github} className='w-12 h-12 lg:w-16 lg:h-16 hover:scale-125 duration-200' /></li>
         <li><a href="/" target="_blank"></a><img src={facebook} className='w-12 h-12 lg:w-16 lg:h-16 hover:scale-125 duration-200' /></li>

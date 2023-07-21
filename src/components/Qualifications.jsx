@@ -18,7 +18,7 @@ export default function Qualifications() {
               initial='hidden'
               whileInView={'show'}
               viewport={{ once: false, amount: 0.7 }}
-              src={roadmap} alt="" className='w-12 h-12 absolute inset-x-0 top-0 mx-auto z-20'
+              src={roadmap} alt="" className='h-16 absolute inset-x-0 top-0 mx-auto z-20'
             />
             {/* divider */}
 
@@ -32,7 +32,7 @@ export default function Qualifications() {
 
             {/* data */}
             <div
-              className='flex flex-col w-[70%] mt-6 '>
+              className='flex flex-col w-[60%] mt-6 '>
               {qualifications.reverse().map((quali, index) => {
                 return (
                   <motion.div
@@ -42,12 +42,12 @@ export default function Qualifications() {
                     viewport={{ once: false, amount: 0.7 }}
                     key={index}
                     className='flex w-full'>
-                    <div className={`${quali.type === 'education' ? 'self-start pr-8' : 'pl-8 ml-auto'} min-w-[50%] relative`}>
-                      <div className={`${quali.type === 'education' ? 'inset-y-0 -right-3' : ' inset-y-0 -left-3'} w-6 h-3 absolute my-auto bg-accent rounded-full`}></div>
-                      <div className='px-2 my-2 border border-black rounded-xl shadow-xl '>
+                    <div className={`${quali.type === 'education' ? 'self-start pr-8 text-end' : 'pl-8 ml-auto'} min-w-[50%] relative`}>
+                      <div className={`${quali.type === 'education' ? 'inset-y-0 -right-3' : ' inset-y-0 -left-3'} w-6 h-6 absolute my-auto bg-accent rounded-full`}></div>
+                      <div className='px-2 my-2 border border-black rounded-xl shadow-xl bg-white text-black'>
                         <h1 className='text-accent text-xl font-bold'>{quali.position}</h1>
                         <span className=''>{quali.name}</span>
-                        <p className='flex'><TiCalendarOutline className='mt-1 mr-1' />{quali.date}</p>
+                        <p className={`${quali.type === 'education' ? 'justify-end' : 'justify-start'} flex`}><TiCalendarOutline className='mr-1 mt-1'/>{quali.date}</p>
                       </div>
                     </div>
                   </motion.div>

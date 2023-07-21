@@ -30,7 +30,7 @@ export default [
   {
     id: 0,
     name: 'Colegio De San Lorenzo',
-    position: 'BS Computer Science',
+    position: 'BS Major in Computer Science',
     date: 'Jun 2012 - Mar 2016',
     type: 'education',
   },

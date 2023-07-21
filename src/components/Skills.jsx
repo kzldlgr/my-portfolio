@@ -52,7 +52,7 @@ export default function Skills() {
                     transition={{ duration: 0.3, delay: index * 0.3 }}
                     key={index} className='w-24 h-24 lg:w-32 lg:h-32 text-center shadow-xl border border-black rounded-2xl flex flex-col justify-center items-center hover:scale-110 transition mx-auto'>
                     <img src={ski.url} alt="" className='w-16 lg:w-24 aspect-square	object-contain p-2 lg:p-4' />
-                    <h1 className='w-full whitespace-nowrap text-center font-bold text-[12px]'>{ski.name}</h1>
+                    <h1 className='w-full whitespace-nowrap text-center font-bold'>{ski.name}</h1>
                   </motion.div>
                 )
               })}

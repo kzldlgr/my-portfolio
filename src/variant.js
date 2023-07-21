@@ -13,7 +13,7 @@ export const fadeIn = (direction, delay) => {
       opacity: 1,
       transition: {
         type: 'tween',
-        duration: 4,
+        duration: 1.2,
         delay: delay,
       },
     },
@@ -32,8 +32,8 @@ export const qualifyData = (direction, idx) => {
       opacity: 1,
       transition: {
         type: 'tween',
-        duration: 2,
-        delay: idx * 0.6,
+        duration: 1,
+        delay: idx * 0.3,
       },
     },
   };
@@ -50,10 +50,10 @@ export const divider = () => {
     },
     show: {
       opacity: 1,
-      clipPath: "inset(0% 0% 0% 0% round 10px)",
+      clipPath: "inset(5% 0% 0% 0% round 10px)",
       transition: {
         type: "tween",
-        duration: 4.4,
+        duration: 2.1,
         delay: 0,
       }
     },
@@ -72,7 +72,7 @@ export const rocket = (direction, delay) => {
       opacity: 1,
       transition: {
         type: 'tween',
-        duration: 4,
+        duration: 2,
         delay: delay,
         ease: [0.25, 0.25, 0.25, 0.75],
       },

@@ -27,7 +27,7 @@ export default {
         accent: '#B809C3',
       },
       backgroundImage: {
-        roadmap: "url('./assets/image/journeyline.png')",
+        roadmap: "url('./assets/image/rocket.gif')"
       },
     },
   },
