@@ -51,6 +51,11 @@
   border-radius: 10%;
 }
 
+.blur-background {
+
+  filter: blur(50px);
+}
+
 @layer base {
   body {
     @apply font-secondary text-lg leading-8 text-white;
