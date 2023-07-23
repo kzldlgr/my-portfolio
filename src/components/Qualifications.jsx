@@ -33,7 +33,7 @@ export default function Qualifications() {
             {/* data */}
             <div
               className='flex flex-col w-[60%] mt-6 '>
-              {qualifications.reverse().map((quali, index) => {
+              {qualifications.map((quali, index) => {
                 return (
                   <motion.div
                     variants={qualifyData(`${quali.type === 'work' ? 'left' : 'right'}`, quali.id)}
