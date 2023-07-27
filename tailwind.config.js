@@ -23,7 +23,7 @@ export default {
     extend: {
       colors: {
         'text': '#fafafa',
-        'background': '#1a1a1a',
+        'background': '#050505',
         'primary': '#dfc19a',
         'secondary': '#271b0c',
         'accent': '#dbb88a',

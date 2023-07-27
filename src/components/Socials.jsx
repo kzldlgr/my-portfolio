@@ -7,7 +7,7 @@ export default function Socials() {
 
   return (
     <nav className='bg-black'>
-      <ul className='absolute right-12 flex flex-col gap-5 text-accent '>
+      <ul className='flex flex-row gap-2 text-accent '>
         <li className='shadow-lg'><a href="https://github.com/kzldlgr" target="_blank"><FaGithubSquare className='w-12 h-12' /></a></li>
         <li className='shadow-lg'><a href="https://www.linkedin.com/in/kazeldeligero/" target="_blank"><FaLinkedin className='w-12 h-12' /></a></li>
         <li className='shadow-lg'><a href="https://www.facebook.com/kazel.deligero/" target="_blank"><FaFacebookSquare className='w-12 h-12' /></a></li>

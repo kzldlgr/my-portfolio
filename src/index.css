@@ -21,11 +21,11 @@
 
 .selected,
 .active-nav {
-  background: #dfc19a;
+  background: #a37333;
 }
 
 .active-nav {
-  color: #000000;
+  color: #0c0804;
   padding: 1rem;
   border-radius: 10%;
 }
@@ -62,10 +62,10 @@
     @apply py-8 lg:py-24 lg:h-screen flex items-center;
   }
   .nav{
-    @apply relative text-text font-bold font-primary tracking-[1px] hover:text-primary cursor-pointer w-full px-4 h-[60px] flex items-center justify-center;
+    @apply relative text-text font-bold font-primary tracking-[1px] hover:text-[#a37333] cursor-pointer w-full px-4 h-[60px] flex items-center justify-center;
   }
   .nav::after{
-    @apply content-[''] absolute bg-primary h-[3px] w-[0%] left-0 -bottom-[5px] rounded-xl duration-300
+    @apply content-[''] absolute bg-[#a37333] h-[3px] w-[0%] left-0 -bottom-[5px] rounded-xl duration-300
   }
   .nav:hover::after{
     @apply w-[100%]

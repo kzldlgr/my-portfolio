@@ -4,8 +4,8 @@ import Socials from './Socials';
 
 export default function Header() {
   return (
-    <header className="fixed w-full px-[30px] lg:px[100px] z-50 h-[100px] lg:h-[140px] flex items-center">
-      <div className="flex flex-col lg:flex-row lg:items-center w-full lg:max-w-[1400px] lg:mx-auto justify-between">
+    <header className="fixed w-full px-[30px] lg:px[0px] z-50 h-[100px] lg:h-[140px] flex items-center">
+      <div className="flex flex-col lg:flex-row lg:items-center w-full lg:max-w-[1600px] lg:mx-auto justify-between">
         <a
           to={'/'}
           className="max-w-[300px] lg:max-w-[800px] flex flex-row gap-2 items-center"
