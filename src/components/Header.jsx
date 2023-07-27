@@ -19,7 +19,7 @@ export default function Header() {
             smooth={true}
             spy={true}
             offset={-200}
-            className='cursor-pointer w-full px-4 h-[60px] flex items-center justify-center'>
+            className='nav'>
             Home
           </Link>
           <Link
@@ -27,7 +27,7 @@ export default function Header() {
             activeClass="active-nav"
             smooth={true}
             spy={true}
-            className='cursor-pointer w-full px-4 h-[60px] flex items-center justify-center'>
+            className='nav'>
             About
           </Link>
           <Link
@@ -35,7 +35,7 @@ export default function Header() {
             activeClass="active-nav"
             smooth={true}
             spy={true}
-            className='cursor-pointer w-full px-4 h-[60px] flex items-center justify-center'>
+            className='nav'>
             Skills
           </Link>
           <Link
@@ -43,7 +43,7 @@ export default function Header() {
             activeClass="active-nav"
             smooth={true}
             spy={true}
-            className='cursor-pointer w-full px-4 h-[60px] flex items-center justify-center'>
+            className='nav'>
             Qualifications
           </Link>
           <Link
@@ -51,7 +51,7 @@ export default function Header() {
             activeClass="active-nav"
             smooth={true}
             spy={true}
-            className='cursor-pointer w-full px-4 h-[60px] flex items-center justify-center'>
+            className='nav'>
             Projects
           </Link>
           <Link
@@ -59,7 +59,7 @@ export default function Header() {
             activeClass="active-nav"
             smooth={true}
             spy={true}
-            className='cursor-pointer w-full px-4 h-[60px] flex items-center justify-center'>
+            className='nav'>
             Contact
           </Link>
         </div>

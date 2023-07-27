@@ -17,7 +17,7 @@ export default function Banner() {
             viewport={{ once: false, amount: 0.7 }}
             className='hidden lg:flex flex-1 max-w-[320px] lg:max-w-[1000px] overflow-hidden'>
             <motion.img
-              whileHover={{ scale: 1.3 }}
+              whileHover={{ scale: 1.1 }}
               transition={transition1}
               src={Image} alt="" />
           </motion.div>

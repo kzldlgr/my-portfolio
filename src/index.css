@@ -2,27 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.btn {
-  background: linear-gradient(
-    92.23deg,
-    #ff56f6 21.43%,
-    #b936ee 50.63%,
-    #3bace2 100%,
-    #406aff 117.04%
-  );
-  box-shadow: 0px 4.42184px 107.23px rgba(255, 86, 246, 0.51);
-}
-
-.btn:hover {
-  background: linear-gradient(
-    92.23deg,
-    #406aff 21.43%,
-    #3bace2 50.63%,
-    #b936ee 100%,
-    #ff56f6 117.04%
-  );
-}
-
 .gradient,
 .active {
   background: linear-gradient(
@@ -40,20 +19,15 @@
   border-radius: 100%;
 }
 
-.gradient,
+.selected,
 .active-nav {
-  background: #a37333;
+  background: #dfc19a;
 }
 
 .active-nav {
-  color: #0c0804;
+  color: #000000;
   padding: 1rem;
   border-radius: 10%;
-}
-
-.blur-background {
-
-  filter: blur(50px);
 }
 
 @layer base {
@@ -70,7 +44,7 @@
     @apply font-primary font-semibold text-[26px] mb-6 leading-[46px];
   }
   .btn {
-    @apply rounded-full font-primary text-white font-medium;
+    @apply cursor-pointer py-[18px] px-[50px] h-[66px] flex items-center justify-center text-2xl uppercase font-secondary font-semibold bg-primary text-text;
   }
   .btn-sm {
     @apply h-[48px] px-6 text-sm;
@@ -86,5 +60,14 @@
   }
   .section {
     @apply py-8 lg:py-24 lg:h-screen flex items-center;
+  }
+  .nav{
+    @apply relative text-text font-bold font-primary tracking-[1px] hover:text-primary cursor-pointer w-full px-4 h-[60px] flex items-center justify-center;
+  }
+  .nav::after{
+    @apply content-[''] absolute bg-primary h-[3px] w-[0%] left-0 -bottom-[5px] rounded-xl duration-300
+  }
+  .nav:hover::after{
+    @apply w-[100%]
   }
 }

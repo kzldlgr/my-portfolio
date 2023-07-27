@@ -18,7 +18,7 @@ export default function Skills() {
       return ski
     }
   })
-  
+
   return (
     <section className="section" id="skills">
       <div className="container mx-auto lg:max-w-[1600px] bg-accent mt-24 rounded-xl">
@@ -46,14 +46,11 @@ export default function Skills() {
             <div className="grid grid-cols-3 gap-y-2 gap-x-8 lg:gap-x-1 ">
               {frontEndArray.map((ski, index) => {
                 return (
-                  <motion.div
-                    initial={{ opacity: 0, translateX: -50, translateY: -50 }}
-                    animate={{ opacity: 1, translateX: 0, translateY: 0 }}
-                    transition={{ duration: 0.3, delay: index * 0.3 }}
-                    key={index} className='w-24 h-24 lg:w-32 lg:h-32 text-center shadow-xl bg-primary rounded-2xl flex flex-col justify-center items-center hover:scale-110 transition mx-auto'>
+                  <div
+                    key={index} className='w-24 h-24 lg:w-32 lg:h-32 text-center shadow-xl bg-white rounded-2xl flex flex-col justify-center items-center hover:scale-110 transition mx-auto'>
                     <img src={ski.url} alt="" className='w-16 lg:w-24 aspect-square	object-contain p-2 lg:p-4' />
                     <h1 className='w-full whitespace-nowrap text-center font-bold text-background'>{ski.name}</h1>
-                  </motion.div>
+                  </div>
                 )
               })}
             </div>
@@ -77,14 +74,11 @@ export default function Skills() {
             <div className="grid grid-cols-3 gap-y-2 gap-x-8 lg:gap-x-1 ">
               {backEndArray.map((ski, index) => {
                 return (
-                  <motion.div
-                    initial={{ opacity: 0, translateX: -50, translateY: -50 }}
-                    animate={{ opacity: 1, translateX: 0, translateY: 0 }}
-                    transition={{ duration: 0.3, delay: index * 0.3 }}
-                    key={index} className='w-24 h-24 lg:w-32 lg:h-32 text-center shadow-xl bg-primary rounded-2xl flex flex-col justify-center items-center hover:scale-125 transition mx-auto'>
+                  <div
+                    key={index} className='w-24 h-24 lg:w-32 lg:h-32 text-center shadow-xl bg-white rounded-2xl flex flex-col justify-center items-center hover:scale-110 transition mx-auto'>
                     <img src={ski.url} alt="" className='w-16 lg:w-24 aspect-square	object-contain p-2 lg:p-4' />
                     <h1 className='w-full whitespace-nowrap text-center font-bold text-background'>{ski.name}</h1>
-                  </motion.div>
+                  </div>
                 )
               })}
             </div>
@@ -108,14 +102,11 @@ export default function Skills() {
             <div className="grid grid-cols-3 gap-y-2 gap-x-8 lg:gap-x-4 mb-4 ">
               {othersArray.map((ski, index) => {
                 return (
-                  <motion.div
-                    initial={{ opacity: 0, translateX: -50, translateY: -50 }}
-                    animate={{ opacity: 1, translateX: 0, translateY: 0 }}
-                    transition={{ duration: 0.3, delay: index * 0.3 }}
-                    key={index} className='w-24 h-24 lg:w-32 lg:h-32 text-center shadow-xl bg-primary rounded-2xl flex flex-col justify-center items-center hover:scale-110 transition mx-auto'>
+                  <div
+                    key={index} className='w-24 h-24 lg:w-32 lg:h-32 text-center shadow-xl bg-white rounded-2xl flex flex-col justify-center items-center hover:scale-110 transition mx-auto'>
                     <img src={ski.url} alt="" className='w-16 lg:w-24 aspect-square	object-contain p-2 lg:p-4' />
                     <h1 className='w-full whitespace-nowrap text-center font-bold text-background'>{ski.name}</h1>
-                  </motion.div>
+                  </div>
                 )
               })}
             </div>
