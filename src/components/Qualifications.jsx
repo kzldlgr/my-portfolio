@@ -44,7 +44,7 @@ export default function Qualifications() {
                     className='flex w-full'>
                     <div className={`${quali.type === 'education' ? 'self-start pr-8 text-end' : 'pl-8 ml-auto'} min-w-[50%] relative`}>
                       <div className={`${quali.type === 'education' ? 'inset-y-0 -right-3' : ' inset-y-0 -left-3'} w-6 h-6 absolute my-auto bg-accent rounded-full`}></div>
-                      <div className='px-2 my-2 border border-black rounded-xl shadow-xl bg-accent text-text'>
+                      <div className='px-2 my-2 border border-text rounded-xl shadow-xl bg-accent text-text'>
                         <h1 className='text-secondary text-xl font-bold'>{quali.position}</h1>
                         <span className=''>{quali.name}</span>
                         <p className={`${quali.type === 'education' ? 'justify-end' : 'justify-start'} flex`}><TiCalendarOutline className='mr-1 mt-1'/>{quali.date}</p>
