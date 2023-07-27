@@ -42,11 +42,11 @@
 
 .gradient,
 .active-nav {
-  background: black;
+  background: #a37333;
 }
 
 .active-nav {
-  color: white;
+  color: #0c0804;
   padding: 1rem;
   border-radius: 10%;
 }

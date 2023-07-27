@@ -10,7 +10,7 @@ export default function Header() {
           to={'/'}
           className="max-w-[300px] lg:max-w-[800px] flex flex-row gap-2 items-center"
         >
-          <img src={Logo} alt="" className="w-16 h-16" />
+          <img src={Logo} alt="" className="w-44 h-full m-2 p-1" />
         </a>
         <div className="hidden xl:flex gap-x-6 font-semibold">
           <Link

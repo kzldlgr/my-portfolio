@@ -28,13 +28,13 @@ export default function Banner() {
               initial='hidden'
               whileInView={'show'}
               viewport={{ once: false, amount: 0.7 }}
-              className='text-4xl font-bold m-2 text-black'>Hi, I am </motion.h1>
+              className='text-4xl font-bold m-2 text-text'>Hi, I am </motion.h1>
             <motion.h1
               variants={fadeIn('up', 0.3)}
               initial='hidden'
               whileInView={'show'}
               viewport={{ once: false, amount: 0.7 }}
-              className='text-[55px] font-bold leading-[0.8] lg:text-[110px] text-black'>
+              className='text-[55px] font-bold leading-[0.8] lg:text-[90px] text-accent my-6'>
               Kazel Deligero
             </motion.h1>
             <motion.div
@@ -43,14 +43,14 @@ export default function Banner() {
               whileInView={'show'}
               viewport={{ once: false, amount: 0.7 }}
               className='mb-6 text-[36px] lg:text-[50px] font-secondary font-semibold uppercase leading-[1] my-2'>
-              <h1 className='text-black font-bold'>Full Stack Web Developer</h1>
+              <h1 className='text-primary font-bold'>Full Stack Web Developer</h1>
             </motion.div>
             <motion.p
               variants={fadeIn('up', 0.3)}
               initial='hidden'
               whileInView={'show'}
               viewport={{ once: false, amount: 0.7 }}
-              className='mb-8 max-w-xl mx-auto lg:mx-0 text-2xl text-black'>
+              className='mb-8 max-w-xl mx-auto lg:mx-0 text-2xl text-text'>
               High level knowledge and experience in Web Development and producing quality work.
             </motion.p>
             <motion.div
@@ -63,7 +63,7 @@ export default function Banner() {
                 to="contact"
                 smooth={true}
                 spy={true}
-                className='cursor-pointer py-[18px] px-[50px] h-[66px] flex items-center justify-center text-base uppercase font-secondary font-semibold bg-primary text-white'>Hire me <TiLocationArrow className='w-6 h-6 pb-1' /></Link>
+                className='cursor-pointer py-[18px] px-[50px] h-[66px] flex items-center justify-center text-2xl uppercase font-secondary font-semibold bg-primary text-text'>Hire me <TiLocationArrow className='w-6 h-6 pb-1' /></Link>
             </motion.div>
           </div>
         </div>

@@ -11,7 +11,7 @@ function App() {
 
 
   return (
-    <div className='bg-white text-black overflow-hidden mx-auto'>
+    <div className='bg-background text-text overflow-hidden mx-auto'>
       <Header />
       <Banner />
       {/* <Nav /> */}

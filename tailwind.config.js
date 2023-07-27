@@ -6,9 +6,8 @@ export default {
   ],
   theme: {
     fontFamily: {
-      primary: 'Orbitron',
-      secondary: 'Rajdhani',
-      tertiary: 'Aldrich',
+      primary: 'Montserrat',
+      secondary: 'Poppins',
     },
     container: {
       padding: {
@@ -23,8 +22,11 @@ export default {
     },
     extend: {
       colors: {
-        primary: '#0a0a0a',
-        accent: '#B809C3',
+        'text': '#fafafa',
+        'background': '#050505',
+        'primary': '#dfc19a',
+        'secondary': '#271b0c',
+        'accent': '#dbb88a',
       },
       backgroundImage: {
         roadmap: "url('./assets/image/rocket.gif')",
