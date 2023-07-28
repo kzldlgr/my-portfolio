@@ -26,10 +26,9 @@ export const MenuItem = ({ name, link }) => {
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.95 }}
         >
-
             <Link
                 to={link}
-                activeClass="active-nav"
+                activeClass="active"
                 smooth={true}
                 spy={true}
                 className='nav'>
