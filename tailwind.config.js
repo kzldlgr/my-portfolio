@@ -30,7 +30,8 @@ export default {
       },
       backgroundImage: {
         roadmap: "url('./assets/image/rocket.gif')",
-        portfolio: "url('./assets/image/bg1.jpg')"
+        portfolio: "url('./assets/image/bg1.jpg')",
+        about: "url('./assets/image/about.jpg')"
       },
     },
   },

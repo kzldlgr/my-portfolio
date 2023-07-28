@@ -19,7 +19,7 @@
 }
 
 .active-nav {
-  color: #0c0804;
+  color: #fff;
   padding: 1rem;
   border-radius: 10%;
 }
@@ -56,35 +56,16 @@
     @apply py-8 lg:py-24 lg:h-screen flex items-center;
   }
   .nav{
-    @apply relative text-text font-bold font-primary tracking-[1px] hover:text-[#a37333] cursor-pointer w-full px-4 h-[60px] flex items-center justify-center active:scale-110;
+    @apply relative text-text font-bold font-primary tracking-[1px] hover:text-[#a37333] cursor-pointer w-full px-4 h-[60px] flex items-center justify-center active:scale-110 z-30;
   }
   .nav::after{
-    @apply content-[''] absolute bg-[#a37333] h-[3px] w-[0%] left-0 -bottom-[5px] rounded-xl duration-300
+    @apply content-[''] absolute bg-[#a37333] h-[3px] w-[0%] left-0 -bottom-[5px] rounded-xl duration-300 active:text-text;
   }
   .nav:hover::after{
     @apply w-[100%]
   }
 }
 
-li {
-  list-style: none;
-  margin-bottom: 20px;
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-}
-
-.refresh {
-  padding: 10px;
-  position: absolute;
-  background: rgba(0, 0, 0, 0.4);
-  border-radius: 10px;
-  width: 20px;
-  height: 20px;
-  top: 10px;
-  right: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
+.about-img{
+  border-radius: 30% 70% 56% 44% / 48% 54% 46% 52% ;
 }

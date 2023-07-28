@@ -30,7 +30,7 @@ const ulVariants = {
 
 export const Navigation = () => (
     <motion.div variants={liVariants} className="absolute top-[20%] right-0 w-[280px] mx-2">
-        <div className="flex justify-start items-center gap-4 border-b border-black p-2 mb-12 text-accent shadow-xl">
+        <div className="flex justify-start items-center gap-4 border-b border-accent p-2 mb-12 text-accent shadow-xl">
             <a href="https://github.com/kzldlgr" target="_blank" rel="noreferrer" className="active:scale-110 duration-300 hover:scale-125"><FaGithubSquare className='w-8 h-8' /></a>
             <a href="https://www.linkedin.com/in/kazeldeligero/" target="_blank" rel="noreferrer" className="active:scale-110 duration-300 hover:scale-125"><FaLinkedin className='w-8 h-8' /></a>
             <a href="https://www.facebook.com/kazel.deligero/" target="_blank" rel="noreferrer" className="active:scale-110 duration-300 hover:scale-125"><FaFacebookSquare className='w-8 h-8' /></a>
