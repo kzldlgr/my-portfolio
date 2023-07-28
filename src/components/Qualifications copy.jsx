@@ -6,11 +6,11 @@ import { TiCalendarOutline } from "react-icons/ti";
 export default function Qualifications() {
   return (
     <section className="section" id="qualifications">
-      <div className="container mx-auto mt-24">
+      <div className="container mx-auto mt-12 lg:mt-24">
         <div className="flex flex-col justify-center items-center">
           <h1 className="h2 text-accent mb-0 whitespace-pre-line">Education & Work Experience</h1>
-          <h1 className="text-center my-4">My personal journey</h1>
-          <div className="w-full lg:w-[1150px] h-[550px] lg:h-[650px] relative flex justify-center items-center">
+          <h1 className="text-center">My personal journey</h1>
+          <div className="w-full lg:w-[1150px] h-[650px] mt-4 relative flex justify-center items-center">
             {/* divider */}
             <motion.div
               variants={divider()}
@@ -22,7 +22,7 @@ export default function Qualifications() {
 
             {/* data */}
             <div
-              className='flex flex-col w-[80%] lg:mt-6'>
+              className='flex flex-col w-[80%] mt-6 '>
               {qualifications.map((quali, index) => {
                 return (
                   <motion.div
@@ -31,8 +31,8 @@ export default function Qualifications() {
                     whileInView={'show'}
                     viewport={{ once: false, amount: 0.7 }}
                     key={index}
-                    className='flex w-full'>
-                    <div className={`${quali.type === 'education' ? 'lg:self-start lg:pr-8 text-end' : 'lg:pl-8 lg:ml-auto'} lg:w-[50%] w-full relative`}>
+                    className='flex flex-row w-full justify-center items-center'>
+                    <div className={`${quali.type === 'education' ? 'lg:self-start lg:pr-8 lg:text-end' : 'lg:pl-8 lg:ml-auto'} min-w-[50%] relative`}>
                       <div className={`${quali.type === 'education' ? 'lg:inset-y-0 lg:-right-3' : 'lg:inset-y-0 lg:-left-3'} hidden lg:block w-6 h-6 absolute my-auto bg-accent rounded-full`}></div>
                       <div className='px-2 my-2 border border-text rounded-xl shadow-xl bg-accent text-text'>
                         <h1 className='text-secondary text-xl font-bold'>{quali.position}</h1>

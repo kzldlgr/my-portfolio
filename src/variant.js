@@ -61,25 +61,6 @@ export const divider = () => {
 };
 
 
-export const rocket = (direction, delay) => {
-  return {
-    hidden: {
-      translateY: direction === 'up' ? 600 : 0,
-      opacity: 0,
-    },
-    show: {
-      translateY: 0,
-      opacity: 1,
-      transition: {
-        type: 'tween',
-        duration: 2,
-        delay: delay,
-        ease: [0.25, 0.25, 0.25, 0.75],
-      },
-    },
-  };
-};
-
 export const transition1 = {
   duration: 1.4,
   ease: [0.6, 0.01, 0.2, 0.9],
@@ -97,10 +78,3 @@ export const useDimensions = ref => {
 
   return dimensions.current;
 };
-
-// for rocketship
-// initial={{ opacity: 0, translateY: 1000 }}
-// animate={{ opacity: 1, translateX: 0, translateY: 0 }}
-// whileInView={'show'}
-// viewport={{ once: false, amount: 0.7 }}
-// transition={{ duration: 4 }}
