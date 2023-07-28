@@ -1,4 +1,3 @@
-import { TypeAnimation } from "react-type-animation";
 import { Link } from 'react-scroll';
 import resume from '../assets/cv/Resume.pdf';
 import { TiDownload, TiExport } from 'react-icons/ti';
@@ -24,14 +23,7 @@ export default function About() {
             viewport={{ once: false, amount: 0.7 }}
             className="flex-1 flex flex-col">
             <h2 className="h2 text-accent">About me</h2>
-            <TypeAnimation sequence={[
-              `I'm Kazel and I am a Software Engineer. I graduated at Colegio De San Lorenzo with a degree of BS Computer Science. I went to a bootcamp at Avion School where I learned HTML5, Javascript, React JS and Ruby on Rails and created various projects. Previously I am a Senior System Support Specialist at Bounty Agro Ventures, Inc. where I managed POS (point of sales) system/pheriperals of more than 1000 outlets of Chooks To Go.`,
-              2000
-            ]}
-              speed={70}
-              wrapper='span'
-              repeat={Infinity}
-            />
+            <p>I&apos;m Kazel and I am a Software Engineer. I graduated at Colegio De San Lorenzo with a degree of BS Computer Science. I went to a bootcamp at Avion School where I learned HTML5, Javascript, React JS and Ruby on Rails and created various projects. Previously I am a Senior System Support Specialist at Bounty Agro Ventures, Inc. where I managed POS (point of sales) system/pheriperals of more than 1000 outlets of Chooks To Go.</p>
             <div className="lg:flex flex-row gap-2 mt-4">
               <Link
                 to="project"

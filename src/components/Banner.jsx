@@ -28,7 +28,7 @@ export default function Banner() {
               initial='hidden'
               whileInView={'show'}
               viewport={{ once: false, amount: 0.7 }}
-              className='text-4xl font-bold m-2 text-text'>Hi, I am </motion.h1>
+              className='text-4xl font-bold m-2 text-text'>Hi, I&apos;m </motion.h1>
             <motion.h1
               variants={fadeIn('up', 0.3)}
               initial='hidden'

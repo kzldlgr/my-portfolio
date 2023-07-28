@@ -30,7 +30,7 @@ export default function Skills() {
 
   return (
     <section className="section" id="skills">
-      <div className="container mx-auto lg:max-w-[1600px] lg:bg-primary/20 mt-12 lg:mt-20 rounded-xl py-4">
+      <div className="container mx-auto lg:max-w-[1600px] mt-12 lg:mt-20 rounded-xl py-4">
         <motion.h1
           variants={fadeIn('down', 0.3)}
           initial='hidden'
@@ -82,12 +82,12 @@ export default function Skills() {
             viewport={{ once: false, amount: 0.7 }}
             className='hidden lg:block flex-1 flex-col text-center justify-center'>
             <h1 className='h2 text-accent'>Front end</h1>
-            <div className="grid grid-cols-3 gap-y-8 lg:gap-x-1">
+            <div className="grid grid-cols-3 gap-y-8 gap-x-1">
               {frontEndArray.map((ski, index) => {
                 return (
                   <div
-                    key={index} className='w-24 h-24 lg:w-32 lg:h-32 text-center shadow-xl bg-secondary rounded-2xl flex flex-col justify-center items-center hover:scale-110 transition mx-auto'>
-                    <img src={ski.url} alt="" className='w-16 lg:w-24 aspect-square	object-contain p-2 lg:p-4' />
+                    key={index} className='w-32 h-32 text-center shadow-xl bg-secondary rounded-2xl flex flex-col justify-center items-center hover:scale-110 transition mx-auto'>
+                    <img src={ski.url} alt="" className='w-24 aspect-square	object-contain p-4' />
                     <h1 className='w-full whitespace-nowrap text-center font-bold text-text'>{ski.name}</h1>
                   </div>
                 )
@@ -110,12 +110,12 @@ export default function Skills() {
             viewport={{ once: false, amount: 0.7 }}
             className='hidden lg:block flex-1 flex-col text-center justify-center'>
             <h1 className='h2 text-accent'>Back end</h1>
-            <div className="grid grid-cols-3 gap-y-8 lg:gap-x-1">
+            <div className="grid grid-cols-3 gap-y-8 gap-x-1">
               {backEndArray.map((ski, index) => {
                 return (
                   <div
-                    key={index} className='w-24 h-24 lg:w-32 lg:h-32 text-center shadow-xl bg-secondary rounded-2xl flex flex-col justify-center items-center hover:scale-110 transition mx-auto'>
-                    <img src={ski.url} alt="" className='w-16 lg:w-24 aspect-square	object-contain p-2 lg:p-4' />
+                    key={index} className='w-32 h-32 text-center shadow-xl bg-secondary rounded-2xl flex flex-col justify-center items-center hover:scale-110 transition mx-auto'>
+                    <img src={ski.url} alt="" className='w-24 aspect-square	object-contain p-4' />
                     <h1 className='w-full whitespace-nowrap text-center font-bold text-text text-[14px]'>{ski.name}</h1>
                   </div>
                 )
@@ -138,12 +138,12 @@ export default function Skills() {
             viewport={{ once: false, amount: 0.7 }}
             className='hidden lg:block flex-1 flex-col text-center justify-center'>
             <h1 className='h2 text-accent'>Others</h1>
-            <div className="grid grid-cols-3 gap-y-8 lg:gap-x-1">
+            <div className="grid grid-cols-3 gap-y-8 gap-x-1">
               {othersArray.map((ski, index) => {
                 return (
                   <div
-                    key={index} className='w-24 h-24 lg:w-32 lg:h-32 text-center shadow-xl bg-secondary rounded-2xl flex flex-col justify-center items-center hover:scale-110 transition mx-auto'>
-                    <img src={ski.url} alt="" className='w-16 lg:w-24 aspect-square	object-contain p-2 lg:p-4' />
+                    key={index} className='w-32 h-32 text-center shadow-xl bg-secondary rounded-2xl flex flex-col justify-center items-center hover:scale-110 transition mx-auto'>
+                    <img src={ski.url} alt="" className='w-24 aspect-square	object-contain p-4' />
                     <h1 className='w-full whitespace-nowrap text-center font-bold text-text text-[14px]'>{ski.name}</h1>
                   </div>
                 )
