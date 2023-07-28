@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Link } from "react-scroll";
+import { FaGithubSquare, FaFacebookSquare, FaLinkedin } from "react-icons/fa";
 
 const liVariants = {
     open: {
@@ -31,8 +32,6 @@ export const Navigation = () => (
     <motion.div variants={liVariants} className="absolute top-[100%] right-0 w-[280px] mx-2">
         <motion.ul
             variants={ulVariants}
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.95 }}
             className="flex flex-col space-y-6"
         >
             <Link
@@ -85,6 +84,11 @@ export const Navigation = () => (
                 Contact
             </Link>
         </motion.ul>
+        <div className="flex justify-center items-center gap-12 border-t border-black mt-[100%] p-4">
+            <a href="https://github.com/kzldlgr" target="_blank" rel="noreferrer" className="active:scale-110 duration-300 hover:scale-125"><FaGithubSquare className='w-8 h-8' /></a>
+            <a href="https://www.linkedin.com/in/kazeldeligero/" target="_blank" rel="noreferrer" className="active:scale-110 duration-300 hover:scale-125"><FaLinkedin className='w-8 h-8' /></a>
+            <a href="https://www.facebook.com/kazel.deligero/" target="_blank" rel="noreferrer" className="active:scale-110 duration-300 hover:scale-125"><FaFacebookSquare className='w-8 h-8' /></a>
+        </div>
     </motion.div>
 );
 

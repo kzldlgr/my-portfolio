@@ -110,9 +110,9 @@ export default function Header() {
           </Link>
         </div>
         <div className='flex-row gap-2 items-center justify-center text-primary hidden lg:flex'>
-          <a href="https://github.com/kzldlgr" target="_blank" rel="noreferrer"><FaGithubSquare className='w-8 h-8' /></a>
-          <a href="https://www.linkedin.com/in/kazeldeligero/" target="_blank" rel="noreferrer"><FaLinkedin className='w-8 h-8' /></a>
-          <a href="https://www.facebook.com/kazel.deligero/" target="_blank" rel="noreferrer"><FaFacebookSquare className='w-8 h-8' /></a>
+          <a href="https://github.com/kzldlgr" target="_blank" rel="noreferrer" className="hover:scale-125 duration-200"><FaGithubSquare className='w-8 h-8' /></a>
+          <a href="https://www.linkedin.com/in/kazeldeligero/" target="_blank" rel="noreferrer" className="hover:scale-125 duration-200"><FaLinkedin className='w-8 h-8' /></a>
+          <a href="https://www.facebook.com/kazel.deligero/" target="_blank" rel="noreferrer" className="hover:scale-125 duration-200"><FaFacebookSquare className='w-8 h-8' /></a>
         </div >
       </div >
     </header >

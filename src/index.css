@@ -56,7 +56,7 @@
     @apply py-8 lg:py-24 lg:h-screen flex items-center;
   }
   .nav{
-    @apply relative text-text font-bold font-primary tracking-[1px] hover:text-[#a37333] cursor-pointer w-full px-4 h-[60px] flex items-center justify-center;
+    @apply relative text-text font-bold font-primary tracking-[1px] hover:text-[#a37333] cursor-pointer w-full px-4 h-[60px] flex items-center justify-center active:scale-110;
   }
   .nav::after{
     @apply content-[''] absolute bg-[#a37333] h-[3px] w-[0%] left-0 -bottom-[5px] rounded-xl duration-300
