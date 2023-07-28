@@ -6,7 +6,6 @@ import { useCycle } from "framer-motion";
 import { useRef } from "react";
 import { useDimensions } from "../variant";
 import { MenuToggle } from '../helpers/MenuToggle';
-import { Link } from 'react-scroll';
 import { Navigation } from '../helpers/Navigation';
 
 const sidebar = {
