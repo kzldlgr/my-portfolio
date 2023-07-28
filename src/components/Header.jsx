@@ -6,7 +6,8 @@ import { useCycle } from "framer-motion";
 import { useRef } from "react";
 import { useDimensions } from "../variant";
 import { MenuToggle } from '../helpers/MenuToggle';
-import { Navigation } from '../helpers/Navigation';
+import { Navigation } from './Navigation';
+import { FaGithubSquare, FaFacebookSquare, FaLinkedin } from "react-icons/fa";
 
 const sidebar = {
   open: (height = 1000) => ({
@@ -108,7 +109,12 @@ export default function Header() {
             Contact
           </Link>
         </div>
-      </div>
-    </header>
+        <div className='flex-row gap-2 items-center justify-center text-primary hidden lg:flex'>
+          <a href="https://github.com/kzldlgr" target="_blank" rel="noreferrer"><FaGithubSquare className='w-8 h-8' /></a>
+          <a href="https://www.linkedin.com/in/kazeldeligero/" target="_blank" rel="noreferrer"><FaLinkedin className='w-8 h-8' /></a>
+          <a href="https://www.facebook.com/kazel.deligero/" target="_blank" rel="noreferrer"><FaFacebookSquare className='w-8 h-8' /></a>
+        </div >
+      </div >
+    </header >
   )
 }
