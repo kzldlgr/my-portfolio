@@ -2,11 +2,12 @@
 import { motion } from 'framer-motion';
 import Logo from '../assets/image/logo.png';
 // import Socials from './Socials';
-import { FaBars } from "react-icons/fa";
 import { useCycle } from "framer-motion";
 import { useRef } from "react";
 import { useDimensions } from "../variant";
 import { MenuToggle } from '../helpers/MenuToggle';
+import { Link } from 'react-scroll';
+import { Navigation } from '../helpers/Navigation';
 
 const sidebar = {
   open: (height = 1000) => ({
@@ -18,7 +19,7 @@ const sidebar = {
     }
   }),
   closed: {
-    clipPath: "circle(100px at 300px 0px )",
+    clipPath: "circle(20px at 258px 40px )",
     transition: {
       delay: 0.5,
       type: "spring",
@@ -53,6 +54,7 @@ export default function Header() {
             className='flex justify-end'
           >
             <motion.div className="absolute top-0 right-0 -z-0 h-screen w-[300px] bg-primary" variants={sidebar} />
+            <Navigation />
             <MenuToggle toggle={() => toggleOpen()} />
           </motion.nav>
         </div>
