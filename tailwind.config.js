@@ -25,8 +25,8 @@ export default {
         'text': '#fafafa',
         'background': '#1a1a1a',
         'primary': '#dfc19a',
-        'secondary': '#271b0c',
-        'accent': '#dbb88a',
+        'secondary': '#dbb88a',
+        'accent': '#a37333',
       },
       backgroundImage: {
         roadmap: "url('./assets/image/rocket.gif')",

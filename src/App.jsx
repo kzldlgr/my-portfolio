@@ -1,6 +1,5 @@
 import Header from './components/Header';
 import Banner from './components/Banner';
-// import Nav from './components/Nav';
 import About from './components/About';
 import Qualifications from './components/Qualifications';
 import Project from './components/Project';
@@ -14,7 +13,6 @@ function App() {
     <div className='bg-background text-text overflow-hidden mx-auto'>
       <Header />
       <Banner />
-      {/* <Nav /> */}
       <About />
       <Skills />
       <Qualifications />

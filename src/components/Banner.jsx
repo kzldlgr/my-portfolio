@@ -34,7 +34,7 @@ export default function Banner() {
               initial='hidden'
               whileInView={'show'}
               viewport={{ once: false, amount: 0.7 }}
-              className='text-[55px] font-bold leading-[0.8] lg:text-[90px] text-accent my-6'>
+              className='text-[55px] font-bold leading-[0.8] lg:text-[90px] text-gradient my-6'>
               Kazel Deligero
             </motion.h1>
             <motion.div
@@ -63,7 +63,7 @@ export default function Banner() {
                 to="contact"
                 smooth={true}
                 spy={true}
-                className='cursor-pointer py-[18px] px-[50px] h-[66px] flex items-center justify-center text-2xl uppercase font-secondary font-semibold bg-primary text-text hover:brightness-75'>Hire me <TiLocationArrow className='w-6 h-6 pb-1' /></Link>
+                className='cursor-pointer py-[18px] px-[50px] h-[66px] flex items-center justify-center text-2xl uppercase font-secondary font-semibold bg-primary text-text hover:bg-secondary active:bg-accent'>Hire me <TiLocationArrow className='w-6 h-6 pb-1' /></Link>
             </motion.div>
           </div>
         </div>

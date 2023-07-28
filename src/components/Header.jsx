@@ -1,70 +1,62 @@
-import { Link } from "react-scroll";
+// import { Link } from "react-scroll";
+import { motion } from 'framer-motion';
 import Logo from '../assets/image/logo.png';
-import Socials from './Socials';
+// import Socials from './Socials';
+import { FaBars } from "react-icons/fa";
+import { useCycle } from "framer-motion";
+import { useRef } from "react";
+import { useDimensions } from "../variant";
+import { MenuToggle } from '../helpers/MenuToggle';
+
+const sidebar = {
+  open: (height = 1000) => ({
+    clipPath: `circle(${height * 2 + 300}px at 80px 40px)`,
+    transition: {
+      type: "spring",
+      stiffness: 20,
+      restDelta: 2
+    }
+  }),
+  closed: {
+    clipPath: "circle(100px at 300px 0px )",
+    transition: {
+      delay: 0.5,
+      type: "spring",
+      stiffness: 400,
+      damping: 40
+    }
+  }
+};
 
 export default function Header() {
+  const [isOpen, toggleOpen] = useCycle(false, true);
+  const containerRef = useRef(null);
+  const { height } = useDimensions(containerRef);
+
   return (
-    <header className="fixed w-full px-[30px] lg:px[0px] z-50 h-[100px] lg:h-[140px] flex items-center">
-      <div className="flex flex-col lg:flex-row lg:items-center w-full lg:max-w-[1600px] lg:mx-auto justify-between">
-        <a
-          to={'/'}
-          className="max-w-[300px] lg:max-w-[800px] flex flex-row gap-2 items-center"
-        >
-          <img src={Logo} alt="" className="w-44 h-full m-2 p-1" />
-        </a>
-        <div className="hidden xl:flex gap-x-6 font-semibold">
-          <Link
-            to='home'
-            activeClass="active-nav"
-            smooth={true}
-            spy={true}
-            offset={-200}
-            className='nav'>
-            Home
-          </Link>
-          <Link
-            to='about'
-            activeClass="active-nav"
-            smooth={true}
-            spy={true}
-            className='nav'>
-            About
-          </Link>
-          <Link
-            to='skills'
-            activeClass="active-nav"
-            smooth={true}
-            spy={true}
-            className='nav'>
-            Skills
-          </Link>
-          <Link
-            to='qualifications'
-            activeClass="active-nav"
-            smooth={true}
-            spy={true}
-            className='nav'>
-            Qualifications
-          </Link>
-          <Link
-            to='project'
-            activeClass="active-nav"
-            smooth={true}
-            spy={true}
-            className='nav'>
-            Projects
-          </Link>
-          <Link
-            to='contact'
-            activeClass="active-nav"
-            smooth={true}
-            spy={true}
-            className='nav'>
-            Contact
-          </Link>
+    <header className="fixed w-full px-[30px] lg:px[0px] z-50 h-[100px] lg:h-[140px]">
+      <div className="flex w-full justify-between">
+        <div className="">
+          <a
+            to={'/'}
+            className="max-w-[100px] flex flex-row gap-2 items-center"
+          >
+            <img src={Logo} alt="" className="w-[100%] h-[100%]" />
+          </a>
+        </div>
+        <div className="my-8">
+          <motion.nav
+            initial={false}
+            animate={isOpen ? "open" : "closed"}
+            custom={height}
+            ref={containerRef}
+            className='flex justify-end'
+          >
+            <motion.div className="absolute top-0 right-0 -z-0 h-screen w-[300px] bg-primary" variants={sidebar} />
+            <MenuToggle toggle={() => toggleOpen()} />
+          </motion.nav>
         </div>
       </div>
-      <Socials />
     </header>
   )
 }
