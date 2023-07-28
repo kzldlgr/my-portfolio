@@ -19,7 +19,7 @@ const variants = {
 };
 
 // eslint-disable-next-line react/prop-types
-export const MenuItem = ({ name, link }) => {
+export const MenuItem = ({ name, link, offset }) => {
     return (
         <motion.li
             variants={variants}
@@ -31,6 +31,7 @@ export const MenuItem = ({ name, link }) => {
                 activeClass="active"
                 smooth={true}
                 spy={true}
+                offset={offset}
                 className='nav'>
                 {name}
             </Link>

@@ -14,7 +14,7 @@ const variants = {
 export const Navigation = () => (
     <motion.ul variants={variants} className="absolute top-[100%] right-0 w-[280px] mx-2">
         {navigate.map(i => (
-            <MenuItem name={i.name} link={i.link} key={i} />
+            <MenuItem name={i.name} link={i.link} offset={i.offset} key={i} />
         ))}
     </motion.ul>
 );

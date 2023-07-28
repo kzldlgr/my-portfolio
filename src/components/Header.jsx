@@ -1,4 +1,4 @@
-// import { Link } from "react-scroll";
+import { Link } from "react-scroll";
 import { motion } from 'framer-motion';
 import Logo from '../assets/image/logo.png';
 // import Socials from './Socials';
@@ -35,7 +35,7 @@ export default function Header() {
 
   return (
     <header className="fixed w-full px-[30px] lg:px[0px] z-50 h-[100px] lg:h-[140px]">
-      <div className="flex w-full justify-between">
+      <div className="flex w-full justify-between lg:items-center lg:max-w-[1600px] lg:mx-auto">
         <div className="">
           <a
             to={'/'}
@@ -44,7 +44,7 @@ export default function Header() {
             <img src={Logo} alt="" className="w-[100%] h-[100%]" />
           </a>
         </div>
-        <div className="my-8">
+        <div className="my-8 lg:hidden">
           <motion.nav
             initial={false}
             animate={isOpen ? "open" : "closed"}
@@ -56,6 +56,57 @@ export default function Header() {
             <Navigation />
             <MenuToggle toggle={() => toggleOpen()} />
           </motion.nav>
+        </div>
+        <div className="hidden xl:flex gap-x-6 font-semibold">
+          <Link
+            to='home'
+            activeClass="active-nav"
+            smooth={true}
+            spy={true}
+            offset={-200}
+            className='nav'>
+            Home
+          </Link>
+          <Link
+            to='about'
+            activeClass="active-nav"
+            smooth={true}
+            spy={true}
+            className='nav'>
+            About
+          </Link>
+          <Link
+            to='skills'
+            activeClass="active-nav"
+            smooth={true}
+            spy={true}
+            className='nav'>
+            Skills
+          </Link>
+          <Link
+            to='qualifications'
+            activeClass="active-nav"
+            smooth={true}
+            spy={true}
+            className='nav'>
+            Qualifications
+          </Link>
+          <Link
+            to='project'
+            activeClass="active-nav"
+            smooth={true}
+            spy={true}
+            className='nav'>
+            Projects
+          </Link>
+          <Link
+            to='contact'
+            activeClass="active-nav"
+            smooth={true}
+            spy={true}
+            className='nav'>
+            Contact
+          </Link>
         </div>
       </div>
     </header>
