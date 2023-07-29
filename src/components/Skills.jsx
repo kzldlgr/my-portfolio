@@ -51,7 +51,7 @@ export default function Skills() {
             whileInView={'show'}
             viewport={{ once: false, amount: 0.7 }}
             className='block lg:hidden'>
-            <div className='flex flex-row justify-between items-center mx-6 text-accent text-center'>
+            <div className='flex flex-row justify-between items-center text-accent text-center'>
               <p onClick={() => setToggle('frontend')} className={`${toggle === 'frontend' ? 'bg-primary' : 'bg-transparent'} w-full mx-2 rounded-lg p-2`}>Frontend</p>
               <div className='w-1 h-8 bg-accent' ></div>
               <p onClick={() => setToggle('backend')} className={`${toggle === 'backend' ? 'bg-primary' : 'bg-transparent'} w-full mx-2 rounded-lg p-2`}>Backend</p>
