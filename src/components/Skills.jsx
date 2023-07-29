@@ -63,7 +63,7 @@ export default function Skills() {
               initial='hidden'
               whileInView={'show'}
               viewport={{ once: false, amount: 0.7 }}
-              className="grid grid-cols-3 place-items-center py-8 gap-y-12">
+              className="grid grid-cols-3 place-items-center py-2 gap-y-2">
               {arrayToggle.map((ski, index) => {
                 return (
                   <div key={index} className='w-24 h-24 text-center shadow-xl bg-secondary rounded-2xl flex flex-col justify-center items-center'>
