@@ -26,7 +26,7 @@ export default function Project() {
 
   return (
     <section className="section" id="project">
-      <div className="lg:max-w-[1400px] mx-auto mt-12">
+      <div className="lg:max-w-[1300px] mx-auto mt-12">
         <div className="flex flex-col lg:flex-row justify-center items-center gap-x-10">
           <motion.div
             variants={fadeIn('down', 0.3)}
@@ -57,15 +57,15 @@ export default function Project() {
                       href={data[currentIndex].live}
                       target="_blank"
                       rel="noreferrer"
-                      className="flex flex-row w-[200px] h-[50px] justify-center items-center bg-accent rounded-lg hover:scale-105 duration-200 ease-in-out">
-                      <FaExternalLinkAlt className="mx-2"/>
+                      className="flex flex-row w-[200px] h-[50px] justify-center items-center bg-accent rounded-lg hover:scale-105 active:bg-primary duration-300 ease-in-out">
+                      <FaExternalLinkAlt className="mx-2" />
                       <p> Preview Link</p>
                     </a>
                     <a
                       href={data[currentIndex].live}
                       target="_blank"
                       rel="noreferrer"
-                      className="flex flex-row w-[200px] h-[50px] justify-center items-center bg-accent rounded-lg hover:scale-105 duration-200 ease-in-out">
+                      className="flex flex-row w-[200px] h-[50px] justify-center items-center bg-accent rounded-lg hover:scale-105 active:bg-primary duration-300 ease-in-out">
                       <FaGithub className="mx-2" />
                       <p>Source Code</p>
                     </a>
@@ -77,9 +77,11 @@ export default function Project() {
             {/* bottom preview */}
             <div className="relative flex items-center bg-white/20 rounded-xl group/slider px-14">
               {/* left arrow */}
-              <div className="opacity-50 group-hover/slider:opacity-100 absolute top-[50%] translate-x-10 translate-y-[-50%] -left-10 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer z-40">
-                <FaAngleLeft onClick={prevSlide} size={30} className="" />
-              </div>
+              <button
+                onClick={prevSlide}
+                className={`${currentIndex === 0 ? "" : "group-hover/slider:opacity-100"} opacity-10 absolute h-full py-11 top-[50%] translate-x-10 translate-y-[-50%] -left-10 text-2xl rounded-l-lg p-2 bg-black/20 text-white cursor-pointer z-40 active:bg-white duration-300 ease-in-out`}>
+                <FaAngleLeft size={30} />
+              </button>
               <div id="slider" className="w-full h-full overflow-x-scroll scroll whitespace-nowrap scroll-smooth scrollbar-hide space-x-6 rounded-xl">
                 {data.map((item, index) => {
                   console.log(item.id)
@@ -95,9 +97,11 @@ export default function Project() {
                 })}
               </div>
               {/* right arrow */}
-              <div className="opacity-50 group-hover/slider:opacity-100 absolute top-[50%] -translate-x-10 translate-y-[-50%] -right-10 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer z-40">
-                <FaAngleRight onClick={nextSlide} size={30} />
-              </div>
+              <button
+                onClick={nextSlide}
+                className={`${currentIndex === data.length - 1 ? "" : "group-hover/slider:opacity-100"} opacity-10 absolute h-full py-11 top-[50%] translate-x-10 translate-y-[-50%] right-10 text-2xl rounded-r-lg p-2 bg-black/20 text-white cursor-pointer z-40 active:bg-white duration-300 ease-in-out`}>
+                <FaAngleRight size={30} />
+              </button>
             </div>
 
 

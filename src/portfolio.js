@@ -50,5 +50,41 @@ export const data = [
     tools: 'React JS',
     sc: 'https://github.com/kzldlgr/kcd-banking-app',
     live: 'https://kzldlgr.github.io/kcd-banking-app'
+  },
+  {
+    id: 5,
+    name: `Banking App`,
+    img: Banking,
+    description: 'lorem ',
+    tools: 'React JS',
+    sc: 'https://github.com/kzldlgr/kcd-banking-app',
+    live: 'https://kzldlgr.github.io/kcd-banking-app'
+  },
+  {
+    id: 6,
+    name: `Banking App`,
+    img: Banking,
+    description: 'lorem ',
+    tools: 'React JS',
+    sc: 'https://github.com/kzldlgr/kcd-banking-app',
+    live: 'https://kzldlgr.github.io/kcd-banking-app'
+  },
+  {
+    id: 7,
+    name: `Banking App`,
+    img: Banking,
+    description: 'lorem ',
+    tools: 'React JS',
+    sc: 'https://github.com/kzldlgr/kcd-banking-app',
+    live: 'https://kzldlgr.github.io/kcd-banking-app'
+  },
+  {
+    id: 8,
+    name: `Banking App`,
+    img: Banking,
+    description: 'lorem ',
+    tools: 'React JS',
+    sc: 'https://github.com/kzldlgr/kcd-banking-app',
+    live: 'https://kzldlgr.github.io/kcd-banking-app'
   }
 ];
