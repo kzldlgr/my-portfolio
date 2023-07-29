@@ -7,22 +7,21 @@ import Banking from './assets/image/BankingAppFront.png';
 export const data = [
   {
     id: 0,
-    name: 'e-Rescue App',
-    img: eRescue,
-    description: 'lorem ',
-    tools: 'React JS/Ruby on Rails Backend/Vite',
-    sc: 'https://github.com/kzldlgr/e-Rescue-App',
-    sc1: 'https://github.com/kzldlgr/e-Rescue-Api',
-    live: 'https://e-rescue-app.vercel.app/'
-  },
-  {
-    id: 1,
     name: `Ninong's Food Corner POS system`,
     img: Ninongs,
     description: 'lorem ',
     tools: 'React JS/Firebase Backend/Vite',
     sc: 'https://github.com/kzldlgr/utak-project',
     live: 'https://utak-project.vercel.app/'
+  },
+  {
+    id: 1,
+    name: 'e-Rescue App',
+    img: eRescue,
+    description: 'lorem ',
+    tools: 'React JS/Ruby on Rails Backend/Vite',
+    sc: 'https://github.com/kzldlgr/e-Rescue-App',
+    live: 'https://e-rescue-app.vercel.app/'
   },
   {
     id: 2,

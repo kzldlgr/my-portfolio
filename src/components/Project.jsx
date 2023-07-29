@@ -62,7 +62,7 @@ export default function Project() {
                       <p> Preview Link</p>
                     </a>
                     <a
-                      href={data[currentIndex].live}
+                      href={data[currentIndex].sc}
                       target="_blank"
                       rel="noreferrer"
                       className="flex flex-row w-[200px] h-[50px] justify-center items-center bg-accent rounded-lg hover:scale-105 active:bg-primary duration-300 ease-in-out">
