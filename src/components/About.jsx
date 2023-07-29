@@ -7,7 +7,7 @@ import { fadeIn } from "../variant";
 export default function About() {
   return (
     <section className="section" id="about">
-      <div className="container mx-auto my-12">
+      <div className="lg:max-w-[1500px] mx-auto my-12">
         <div className="flex flex-col gap-y-10 lg:flex-row gap-12">
           <motion.div
             variants={fadeIn('right', 0.3)}
@@ -23,7 +23,7 @@ export default function About() {
             viewport={{ once: false, amount: 0.7 }}
             className="flex-1 flex flex-col">
             <h2 className="h2 text-accent">About me</h2>
-            <p className='text-[12px] lg:text-base'>I&apos;m Kazel and I am a Software Engineer. I graduated at Colegio De San Lorenzo with a degree of BS Computer Science. I went to a bootcamp at Avion School where I learned HTML5, Javascript, React JS and Ruby on Rails and created various projects. Previously I am a Senior System Support Specialist at Bounty Agro Ventures, Inc. where I managed POS (point of sales) system/pheriperals of more than 1000 outlets of Chooks To Go.</p>
+            <p className='text-[12px] lg:text-xl lg:leading-10'>I&apos;m Kazel and I am a Software Engineer. I graduated at Colegio De San Lorenzo with a degree of BS Computer Science. I went to a bootcamp at Avion School where I learned HTML5, Javascript, React JS and Ruby on Rails and created various projects. Previously I am a Senior System Support Specialist at Bounty Agro Ventures, Inc. where I managed POS (point of sales) system/pheriperals of more than 1000 outlets of Chooks To Go.</p>
             <div className="lg:flex flex-row gap-2 mt-4">
               <Link
                 to="project"

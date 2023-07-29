@@ -6,6 +6,7 @@ import Banking from './assets/image/BankingAppFront.png';
 
 export const data = [
   {
+    id: 0,
     name: 'e-Rescue App',
     img: eRescue,
     description: 'lorem ',
@@ -15,6 +16,7 @@ export const data = [
     live: 'https://e-rescue-app.vercel.app/'
   },
   {
+    id: 1,
     name: `Ninong's Food Corner POS system`,
     img: Ninongs,
     description: 'lorem ',
@@ -23,6 +25,7 @@ export const data = [
     live: 'https://utak-project.vercel.app/'
   },
   {
+    id: 2,
     name: `Trading App`,
     img: StockApp,
     description: 'lorem ',
@@ -31,6 +34,7 @@ export const data = [
     live: 'https://xchange-lqn1.onrender.com/'
   },
   {
+    id: 3,
     name: `Messaging App`,
     img: Slackers,
     description: 'lorem ',
@@ -39,6 +43,7 @@ export const data = [
     live: 'https://slackerapp.netlify.app/'
   },
   {
+    id: 4,
     name: `Banking App`,
     img: Banking,
     description: 'lorem ',
