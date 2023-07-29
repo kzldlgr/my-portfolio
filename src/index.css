@@ -37,18 +37,6 @@
   .h3 {
     @apply font-primary font-semibold text-[26px] mb-6 leading-[46px];
   }
-  .btn {
-    @apply cursor-pointer py-[18px] px-[50px] h-[66px] flex items-center justify-center text-2xl uppercase font-secondary font-semibold bg-primary text-text;
-  }
-  .btn-sm {
-    @apply h-[48px] px-6 text-sm;
-  }
-  .btn-lg {
-    @apply h-[56px] px-10 text-base;
-  }
-  .btn-link {
-    @apply text-base;
-  }
   .text-gradient {
     @apply bg-gradient-to-r text-transparent bg-clip-text from-[#dfc19a] to-[#271b0c] font-bold font-primary hover:from-[#dbb88a] hover:to-[#dbb88a];
   }
