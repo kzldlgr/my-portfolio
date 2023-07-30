@@ -3,6 +3,7 @@ import Ninongs from './assets/image/NinongsPOS.png';
 import StockApp from './assets/image/StockAppFront.png';
 import Slackers from './assets/image/SlackersApp.png';
 import Banking from './assets/image/BankingAppFront.png';
+import Journal from './assets/image/Journal.png'
 
 export const data = [
   {
@@ -52,37 +53,10 @@ export const data = [
   },
   {
     id: 5,
-    name: `Banking App`,
-    img: Banking,
+    name: `Journal Planner`,
+    img: Journal,
     description: 'lorem ',
-    tools: 'React JS',
-    sc: 'https://github.com/kzldlgr/kcd-banking-app',
-    live: 'https://kzldlgr.github.io/kcd-banking-app'
-  },
-  {
-    id: 6,
-    name: `Banking App`,
-    img: Banking,
-    description: 'lorem ',
-    tools: 'React JS',
-    sc: 'https://github.com/kzldlgr/kcd-banking-app',
-    live: 'https://kzldlgr.github.io/kcd-banking-app'
-  },
-  {
-    id: 7,
-    name: `Banking App`,
-    img: Banking,
-    description: 'lorem ',
-    tools: 'React JS',
-    sc: 'https://github.com/kzldlgr/kcd-banking-app',
-    live: 'https://kzldlgr.github.io/kcd-banking-app'
-  },
-  {
-    id: 8,
-    name: `Banking App`,
-    img: Banking,
-    description: 'lorem ',
-    tools: 'React JS',
+    tools: 'Ruby on Rails',
     sc: 'https://github.com/kzldlgr/kcd-banking-app',
     live: 'https://kzldlgr.github.io/kcd-banking-app'
   }
