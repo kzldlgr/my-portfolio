@@ -7,7 +7,7 @@ import { fadeIn } from "../variant";
 export default function About() {
   return (
     <section className="section" id="about">
-      <div className="lg:max-w-[1500px] mx-auto my-12">
+      <div className="lg:max-w-[1200px] mx-auto my-12 px-6 lg:py-0">
         <div className="flex flex-col gap-y-10 lg:flex-row gap-12">
           <motion.div
             variants={fadeIn('right', 0.3)}

@@ -75,7 +75,12 @@ export default function Project() {
             </div>
 
             {/* bottom preview */}
-            <div className="relative flex items-center bg-white/20 rounded-xl group/slider px-14">
+            <motion.div
+              variants={fadeIn('up', 0.3)}
+              initial="hidden"
+              whileInView={'show'}
+              viewport={{ once: false, amount: 0.3 }}
+              className="relative flex items-center bg-white/20 rounded-xl group/slider px-14">
               {/* left arrow */}
               <button
                 onClick={prevSlide}
@@ -102,7 +107,7 @@ export default function Project() {
                 className={`${currentIndex === data.length - 1 ? "" : "group-hover/slider:opacity-100"} opacity-10 absolute h-full py-11 top-[50%] translate-x-10 translate-y-[-50%] right-10 text-2xl rounded-r-lg p-2 bg-black/20 text-white cursor-pointer z-40 active:bg-white duration-300 ease-in-out`}>
                 <FaAngleRight size={30} />
               </button>
-            </div>
+            </motion.div>
 
 
 
