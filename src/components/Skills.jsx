@@ -30,7 +30,7 @@ export default function Skills() {
 
   return (
     <section className="section" id="skills">
-      <div className="container mx-auto lg:max-w-[1600px] mt-12 lg:mt-20 rounded-xl py-4">
+      <div className="container mx-auto lg:max-w-[1600px] mt-12 lg:mt-16 rounded-xl py-4">
         <motion.h1
           variants={fadeIn('down', 0.3)}
           initial='hidden'
@@ -82,7 +82,7 @@ export default function Skills() {
             viewport={{ once: false, amount: 0.7 }}
             className='hidden lg:block flex-1 flex-col text-center justify-center'>
             <h1 className='h2 text-accent'>Front end</h1>
-            <div className="grid grid-cols-3 gap-y-8 gap-x-1">
+            <div className="grid grid-cols-3 gap-y-4">
               {frontEndArray.map((ski, index) => {
                 return (
                   <div
@@ -110,7 +110,7 @@ export default function Skills() {
             viewport={{ once: false, amount: 0.7 }}
             className='hidden lg:block flex-1 flex-col text-center justify-center'>
             <h1 className='h2 text-accent'>Back end</h1>
-            <div className="grid grid-cols-3 gap-y-8 gap-x-1">
+            <div className="grid grid-cols-3 gap-y-4">
               {backEndArray.map((ski, index) => {
                 return (
                   <div
@@ -138,7 +138,7 @@ export default function Skills() {
             viewport={{ once: false, amount: 0.7 }}
             className='hidden lg:block flex-1 flex-col text-center justify-center'>
             <h1 className='h2 text-accent'>Others</h1>
-            <div className="grid grid-cols-3 gap-y-8 gap-x-1">
+            <div className="grid grid-cols-3 gap-y-4">
               {othersArray.map((ski, index) => {
                 return (
                   <div

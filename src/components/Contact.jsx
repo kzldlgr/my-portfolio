@@ -32,7 +32,7 @@ export default function Contact() {
 
   return (
     <section className="py-16 lg:section" id="contact">
-      <div className="container mx-auto mt-4">
+      <div className="container mx-auto mt-8">
         <div className='flex flex-col lg:flex-row'>
           <motion.div
             variants={fadeIn('right', 0.3)}
