@@ -108,10 +108,6 @@ export default function Project() {
                 <FaAngleRight size={30} />
               </button>
             </motion.div>
-
-
-
-
           </motion.div>
         </div>
       </div >
