@@ -4,7 +4,7 @@
 
 .selected,
 .active {
-  background: #a37333;
+  background: #d54401;
 }
 
 .active {
@@ -15,7 +15,7 @@
 
 .selected,
 .active-nav {
-  background: #a37333;
+  background: #d54401;
 }
 
 .active-nav {
@@ -44,10 +44,10 @@
     @apply py-8 lg:py-24 lg:h-screen flex items-center;
   }
   .nav{
-    @apply relative text-text font-bold font-primary tracking-[1px] hover:text-[#a37333] cursor-pointer w-full px-4 h-[60px] flex items-center justify-center active:scale-110 z-30;
+    @apply relative text-text font-bold font-primary tracking-[1px] hover:text-[#d54401] cursor-pointer w-full px-4 h-[60px] flex items-center justify-center active:scale-110 z-30;
   }
   .nav::after{
-    @apply content-[''] absolute bg-[#a37333] h-[3px] w-[0%] left-0 -bottom-[5px] rounded-xl duration-300 active:text-text;
+    @apply content-[''] absolute bg-[#d54401] h-[3px] w-[0%] left-0 -bottom-[5px] rounded-xl duration-300 active:text-text;
   }
   .nav:hover::after{
     @apply w-[100%]

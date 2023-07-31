@@ -34,7 +34,7 @@ export default function Banner() {
               initial='hidden'
               whileInView={'show'}
               viewport={{ once: false, amount: 0.7 }}
-              className='text-[55px] font-bold leading-[1.1] lg:text-[90px] text-gradient'>
+              className='text-[55px] font-bold leading-[1.1] lg:text-[90px] text-primary'>
               Kazel Deligero
             </motion.h1>
             <motion.div

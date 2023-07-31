@@ -22,11 +22,11 @@ export default {
     },
     extend: {
       colors: {
-        'text': '#fafafa',
-        'background': '#1a1a1a',
-        'primary': '#dfc19a',
-        'secondary': '#dbb88a',
-        'accent': '#a37333',
+        'text': '#00151e',
+        'background': '#f0faff',
+        'primary': '#d04301',
+        'secondary': '#a4e7ff',
+        'accent': '#d54401',
       },
       backgroundImage: {
         roadmap: "url('./assets/image/rocket.gif')",
@@ -36,6 +36,7 @@ export default {
     },
   },
   plugins: [
+    // eslint-disable-next-line no-undef
     require('tailwind-scrollbar-hide')
   ],
 }
