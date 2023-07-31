@@ -30,7 +30,7 @@ export default function Skills() {
 
   return (
     <section className="section" id="skills">
-      <div className="container mx-auto lg:max-w-[1600px] mt-12 lg:mt-16 rounded-xl py-4">
+      <div className="container mx-auto lg:max-w-[1600px] mt-12 lg:mt-12 rounded-xl py-6 bg-primary/20">
         <motion.h1
           variants={fadeIn('down', 0.3)}
           initial='hidden'
@@ -86,9 +86,9 @@ export default function Skills() {
               {frontEndArray.map((ski, index) => {
                 return (
                   <div
-                    key={index} className='w-32 h-32 text-center shadow-xl bg-secondary rounded-2xl flex flex-col justify-center items-center hover:scale-110 transition mx-auto'>
+                    key={index} className='w-28 h-28 text-center bg-transparent rounded-2xl flex flex-col justify-center items-center hover:scale-110 transition mx-auto'>
                     <img src={ski.url} alt="" className='w-24 aspect-square	object-contain p-4' />
-                    <h1 className='w-full whitespace-nowrap text-center font-bold text-text'>{ski.name}</h1>
+                    <h1 className='w-full whitespace-nowrap text-center font-bold text-text text-[16px]'>{ski.name}</h1>
                   </div>
                 )
               })}
@@ -114,10 +114,10 @@ export default function Skills() {
               {backEndArray.map((ski, index) => {
                 return (
                   <div
-                    key={index} className='w-32 h-32 text-center shadow-xl bg-secondary rounded-2xl flex flex-col justify-center items-center hover:scale-110 transition mx-auto'>
-                    <img src={ski.url} alt="" className='w-24 aspect-square	object-contain p-4' />
-                    <h1 className='w-full whitespace-nowrap text-center font-bold text-text text-[14px]'>{ski.name}</h1>
-                  </div>
+                  key={index} className='w-28 h-28 text-center bg-transparent rounded-2xl flex flex-col justify-center items-center hover:scale-110 transition mx-auto'>
+                  <img src={ski.url} alt="" className='w-24 aspect-square	object-contain p-4' />
+                  <h1 className='w-full whitespace-nowrap text-center font-bold text-text text-[16px]'>{ski.name}</h1>
+                </div>
                 )
               })}
             </div>
@@ -142,10 +142,10 @@ export default function Skills() {
               {othersArray.map((ski, index) => {
                 return (
                   <div
-                    key={index} className='w-32 h-32 text-center shadow-xl bg-secondary rounded-2xl flex flex-col justify-center items-center hover:scale-110 transition mx-auto'>
-                    <img src={ski.url} alt="" className='w-24 aspect-square	object-contain p-4' />
-                    <h1 className='w-full whitespace-nowrap text-center font-bold text-text text-[14px]'>{ski.name}</h1>
-                  </div>
+                  key={index} className='w-28 h-28 text-center bg-transparent rounded-2xl flex flex-col justify-center items-center hover:scale-110 transition mx-auto'>
+                  <img src={ski.url} alt="" className='w-24 aspect-square	object-contain p-4' />
+                  <h1 className='w-full whitespace-nowrap text-center font-bold text-text text-[16px]'>{ski.name}</h1>
+                </div>
                 )
               })}
             </div>
