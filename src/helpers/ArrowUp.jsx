@@ -31,7 +31,7 @@ export default function ArrowUp() {
                     transition={{ type: "spring", bounce: 0.25, duration: 4 }}
                     whileHover={{ scale: 1.2 }}
                     onClick={scrollUp}
-                    className="rounded-full border w-[30px] h-[30px] border-white/20 flex justify-center items-center group-hover:border-white text-white/20 group-hover:text-white ">
+                    className="rounded-full border w-[30px] h-[30px] lg:w-[50px] lg:h-[50px] border-text flex justify-center items-center group-hover:border-primary text-text group-hover:text-primary ">
                     <FaArrowUp size={20} />
                 </motion.button>
             }

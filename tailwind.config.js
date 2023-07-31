@@ -22,11 +22,11 @@ export default {
     },
     extend: {
       colors: {
-        'text': '#00151e',
-        'background': '#f0faff',
-        'primary': '#d04301',
-        'secondary': '#a4e7ff',
-        'accent': '#d54401',
+        'text': '#26190d',
+        'background': '#fbf7f4',
+        'primary': '#316290',
+        'secondary': '#f2e5d9',
+        'accent': '#4182be',
       },
       backgroundImage: {
         roadmap: "url('./assets/image/rocket.gif')",
