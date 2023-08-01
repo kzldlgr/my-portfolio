@@ -45,7 +45,7 @@ export const Navigation = () => (
                 smooth={true}
                 spy={true}
                 offset={-200}
-                className='nav'>
+                className='nav-mobile'>
                 Home
             </Link>
             <Link
@@ -53,7 +53,7 @@ export const Navigation = () => (
                 activeClass="active"
                 smooth={true}
                 spy={true}
-                className='nav'>
+                className='nav-mobile'>
                 About
             </Link>
             <Link
@@ -61,7 +61,7 @@ export const Navigation = () => (
                 activeClass="active"
                 smooth={true}
                 spy={true}
-                className='nav'>
+                className='nav-mobile'>
                 Skills
             </Link>
             <Link
@@ -69,7 +69,7 @@ export const Navigation = () => (
                 activeClass="active"
                 smooth={true}
                 spy={true}
-                className='nav'>
+                className='nav-mobile'>
                 Qualifications
             </Link>
             <Link
@@ -77,7 +77,7 @@ export const Navigation = () => (
                 activeClass="active"
                 smooth={true}
                 spy={true}
-                className='nav'>
+                className='nav-mobile'>
                 Projects
             </Link>
             <Link
@@ -85,7 +85,7 @@ export const Navigation = () => (
                 activeClass="active"
                 smooth={true}
                 spy={true}
-                className='nav'>
+                className='nav-mobile'>
                 Contact
             </Link>
         </motion.ul>
