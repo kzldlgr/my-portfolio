@@ -6,7 +6,6 @@ import { useState } from "react"
 
 export default function Project() {
   const [currentIndex, setCurrentIndex] = useState(0);
-  console.log(currentIndex)
 
   const prevSlide = () => {
     const isFirstSlide = currentIndex === 0;
@@ -89,7 +88,6 @@ export default function Project() {
               </button>
               <div id="slider" className="w-full h-full overflow-x-scroll scroll whitespace-nowrap scroll-smooth scrollbar-hide space-x-6 rounded-xl">
                 {data.map((item, index) => {
-                  console.log(item.id)
                   return (
                     <img
                       key={index}
