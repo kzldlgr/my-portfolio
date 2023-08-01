@@ -55,9 +55,9 @@ export default function Contact() {
             ref={form}
             onSubmit={sendEmail}
             className='flex-1 border rounded-2xl flex flex-col gap-y-2 lg:gap-y-6 lg:pb-24 pb-12 p-6 items-start bg-gray-600'>
-            <input className='bg-transparent border-b py-3 outline-none w-full placeholder:text-background focus:border-accent transition-all' name="from_name" type="text" required placeholder='Your name' />
-            <input className='bg-transparent border-b py-3 outline-none w-full placeholder:text-background focus:border-accent transition-all' name="from_email" type="text" required placeholder='Your email' />
-            <textarea className='bg-transparent border-b py-12 outline-none w-full placeholder:text-background focus:border-accent transition-all resize-none mb-12' name="message" required placeholder='Your message'></textarea>
+            <input className='bg-transparent border-b py-3 outline-none w-full placeholder:text-background text-background focus:border-accent transition-all' name="from_name" type="text" required placeholder='Your name' />
+            <input className='bg-transparent border-b py-3 outline-none w-full placeholder:text-background text-background focus:border-accent transition-all' name="from_email" type="text" required placeholder='Your email' />
+            <textarea className='bg-transparent border-b py-12 outline-none w-full placeholder:text-background text-background focus:border-accent transition-all resize-none mb-12' name="message" required placeholder='Your message'></textarea>
             <button className='py-[18px] px-[50px] h-[66px] flex items-center justify-center text-2xl uppercase font-secondary font-semibold bg-primary text-background hover:brightness-75' type='submit' value="Send">Send message</button>
           </motion.form>
           <ToastContainer />
