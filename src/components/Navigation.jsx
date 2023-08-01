@@ -29,15 +29,15 @@ const liVariants = {
 };
 
 export const Navigation = () => (
-    <motion.div variants={variants} className="absolute top-[20%] right-0 w-[280px] mx-2">
-        <div className="flex justify-start items-center gap-4 border-b border-secondary p-2 mb-12 text-secondary shadow-xl">
+    <motion.div variants={variants} className="absolute top-[20%] -right-24 w-[280px]">
+        <div className="flex justify-start items-center gap-2 border-b border-secondary p-1 mb-12 text-secondary shadow-xl">
             <a href="https://github.com/kzldlgr" target="_blank" rel="noreferrer" className="active:scale-110 duration-300 hover:scale-125"><FaGithubSquare className='w-8 h-8' /></a>
             <a href="https://www.linkedin.com/in/kazeldeligero/" target="_blank" rel="noreferrer" className="active:scale-110 duration-300 hover:scale-125"><FaLinkedin className='w-8 h-8' /></a>
             <a href="https://www.facebook.com/kazel.deligero/" target="_blank" rel="noreferrer" className="active:scale-110 duration-300 hover:scale-125"><FaFacebookSquare className='w-8 h-8' /></a>
         </div>
         <motion.ul
             variants={liVariants}
-            className="flex flex-col space-y-6"
+            className="flex flex-col space-y-2"
         >
             <Link
                 to='home'

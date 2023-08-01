@@ -57,7 +57,7 @@ export default function Project() {
                       href={data[currentIndex].live}
                       target="_blank"
                       rel="noreferrer"
-                      className="flex flex-row w-[200px] h-[50px] justify-center items-center bg-accent rounded-lg hover:scale-105 active:bg-primary duration-300 ease-in-out">
+                      className="flex flex-row w-[200px] h-[50px] justify-center items-center text-background bg-accent rounded-lg hover:scale-105 active:bg-primary duration-300 ease-in-out">
                       <FaExternalLinkAlt className="mx-2" />
                       <p> Preview Link</p>
                     </a>
@@ -65,7 +65,7 @@ export default function Project() {
                       href={data[currentIndex].sc}
                       target="_blank"
                       rel="noreferrer"
-                      className="flex flex-row w-[200px] h-[50px] justify-center items-center bg-accent rounded-lg hover:scale-105 active:bg-primary duration-300 ease-in-out">
+                      className="flex flex-row w-[200px] h-[50px] justify-center items-center text-background bg-accent rounded-lg hover:scale-105 active:bg-primary duration-300 ease-in-out">
                       <FaGithub className="mx-2" />
                       <p>Source Code</p>
                     </a>

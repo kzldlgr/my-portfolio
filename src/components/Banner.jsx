@@ -63,7 +63,7 @@ export default function Banner() {
                 to="contact"
                 smooth={true}
                 spy={true}
-                className='cursor-pointer py-[18px] px-[50px] h-[66px] flex items-center justify-center text-2xl uppercase font-secondary font-semibold bg-primary text-text hover:bg-accent active:bg-secondary'>Hire me <TiLocationArrow className='w-6 h-6 pb-1' /></Link>
+                className='cursor-pointer py-[18px] px-[50px] h-[66px] flex items-center justify-center text-2xl uppercase font-secondary font-semibold bg-primary text-background hover:bg-accent active:bg-secondary'>Hire me <TiLocationArrow className='w-6 h-6 pb-1' /></Link>
             </motion.div>
           </div>
         </div>

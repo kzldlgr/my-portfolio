@@ -30,7 +30,7 @@ export default function Skills() {
 
   return (
     <section className="section" id="skills">
-      <div className="container mx-auto lg:max-w-[1600px] mt-12 lg:mt-12 rounded-xl py-6 bg-primary/20">
+      <div className="container mx-auto lg:max-w-[1600px] mt-12 lg:mt-12 rounded-xl py-6">
         <motion.h1
           variants={fadeIn('down', 0.3)}
           initial='hidden'
@@ -80,7 +80,7 @@ export default function Skills() {
             initial='hidden'
             whileInView={'show'}
             viewport={{ once: false, amount: 0.7 }}
-            className='hidden lg:block flex-1 flex-col text-center justify-center'>
+            className='hidden lg:block flex-1 flex-col text-center justify-center bg-primary/20 py-6 rounded-l-lg'>
             <h1 className='h2 text-accent'>Front end</h1>
             <div className="grid grid-cols-3 gap-y-4">
               {frontEndArray.map((ski, index) => {
@@ -108,7 +108,7 @@ export default function Skills() {
             initial='hidden'
             whileInView={'show'}
             viewport={{ once: false, amount: 0.7 }}
-            className='hidden lg:block flex-1 flex-col text-center justify-center'>
+            className='hidden lg:block flex-1 flex-col text-center justify-center bg-primary/20 py-6'>
             <h1 className='h2 text-accent'>Back end</h1>
             <div className="grid grid-cols-3 gap-y-4">
               {backEndArray.map((ski, index) => {
@@ -136,7 +136,7 @@ export default function Skills() {
             initial='hidden'
             whileInView={'show'}
             viewport={{ once: false, amount: 0.7 }}
-            className='hidden lg:block flex-1 flex-col text-center justify-center'>
+            className='hidden lg:block flex-1 flex-col text-center justify-center bg-primary/20 py-6 rounded-r-lg'>
             <h1 className='h2 text-accent'>Others</h1>
             <div className="grid grid-cols-3 gap-y-4">
               {othersArray.map((ski, index) => {

@@ -19,7 +19,7 @@ const sidebar = {
     }
   }),
   closed: {
-    clipPath: "circle(20px at 258px 40px )",
+    clipPath: "circle(20px at 158px 40px )",
     transition: {
       delay: 0.5,
       type: "spring",
@@ -53,7 +53,7 @@ export default function Header() {
             ref={containerRef}
             className='flex justify-end'
           >
-            <motion.div className="absolute top-0 right-0 -z-0 h-screen w-[300px] bg-primary" variants={sidebar} />
+            <motion.div className="absolute top-0 right-0 -z-0 h-screen w-[200px] bg-primary" variants={sidebar} />
             <Navigation />
             <MenuToggle toggle={() => toggleOpen()} />
           </motion.nav>
@@ -110,9 +110,9 @@ export default function Header() {
           </Link>
         </div>
         <div className='flex-row gap-2 items-center justify-center text-accent hidden lg:flex'>
-          <a href="https://github.com/kzldlgr" target="_blank" rel="noreferrer" className="hover:scale-125 duration-200"><FaGithubSquare className='w-8 h-8' /></a>
-          <a href="https://www.linkedin.com/in/kazeldeligero/" target="_blank" rel="noreferrer" className="hover:scale-125 duration-200"><FaLinkedin className='w-8 h-8' /></a>
-          <a href="https://www.facebook.com/kazel.deligero/" target="_blank" rel="noreferrer" className="hover:scale-125 duration-200"><FaFacebookSquare className='w-8 h-8' /></a>
+          <a href="https://github.com/kzldlgr" target="_blank" rel="noreferrer" className="hover:scale-125 duration-200"><FaGithubSquare className='w-10 h-10' /></a>
+          <a href="https://www.linkedin.com/in/kazeldeligero/" target="_blank" rel="noreferrer" className="hover:scale-125 duration-200"><FaLinkedin className='w-10 h-10' /></a>
+          <a href="https://www.facebook.com/kazel.deligero/" target="_blank" rel="noreferrer" className="hover:scale-125 duration-200"><FaFacebookSquare className='w-10 h-10' /></a>
         </div >
       </div >
     </header >

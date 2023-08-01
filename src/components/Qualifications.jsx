@@ -9,7 +9,7 @@ export default function Qualifications() {
       <div className="container mx-auto lg:mt-24 mt-14">
         <div className="flex flex-col justify-center items-center">
           <h1 className="lg:h2 text-accent mb-0 whitespace-pre-line">Education & Work Experience</h1>
-          <h1 className="text-center lg:my-4">My personal journey</h1>
+          <h1 className="text-center">My personal journey</h1>
           <div className="w-full lg:w-[900px] h-[490px] lg:h-[650px] relative flex justify-center items-center">
             {/* divider */}
             <motion.div
@@ -32,12 +32,12 @@ export default function Qualifications() {
                     viewport={{ once: false, amount: 0.7 }}
                     key={index}
                     className='flex w-full h-[90px] lg:h-full'>
-                    <div className={`${quali.type === 'education' ? 'lg:self-start lg:pr-8 text-end' : 'lg:pl-8 lg:ml-auto'} lg:w-[50%] w-full relative`}>
+                    <div className={`${quali.type === 'education' ? 'lg:self-start lg:pr-8 text-end' : 'lg:pl-8 lg:ml-auto'} lg:w-[50%] w-full relative lg:py-2`}>
                       <div className={`${quali.type === 'education' ? 'lg:inset-y-0 lg:-right-3' : 'lg:inset-y-0 lg:-left-3'} hidden lg:block w-6 h-6 absolute my-auto bg-accent rounded-full`}></div>
                       <div className='border border-text rounded-xl shadow-xl bg-accent text-text flex flex-col p-1'>
                         <h1 className='text-secondary lg:text-xl text-[16px] font-bold'>{quali.position}</h1>
-                        <p className='text-[14px]'>{quali.name}</p>
-                        <p className={`${quali.type === 'education' ? 'justify-end' : 'justify-start'} flex text-[14px]`}><TiCalendarOutline className='mr-1 mt-3 lg:mt-2'/>{quali.date}</p>
+                        <p className='text-[14px] lg:text-[18px]'>{quali.name}</p>
+                        <p className={`${quali.type === 'education' ? 'justify-end' : 'justify-start'} flex text-[14px] lg:text-[16px]`}><TiCalendarOutline className='mr-1 mt-3 lg:mt-2'/>{quali.date}</p>
                       </div>
                     </div>
                   </motion.div>
