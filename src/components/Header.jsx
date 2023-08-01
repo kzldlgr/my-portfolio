@@ -1,13 +1,13 @@
 import { Link } from "react-scroll";
 import { motion } from 'framer-motion';
 import Logo from '../assets/image/logo.png';
-// import Socials from './Socials';
 import { useCycle } from "framer-motion";
 import { useRef } from "react";
 import { useDimensions } from "../variant";
 import { MenuToggle } from '../helpers/MenuToggle';
 import { Navigation } from './Navigation';
 import { FaGithubSquare, FaFacebookSquare, FaLinkedin } from "react-icons/fa";
+import { fadeIn } from "../variant";
 
 const sidebar = {
   open: (height = 1000) => ({
@@ -35,7 +35,12 @@ export default function Header() {
   const { height } = useDimensions(containerRef);
 
   return (
-    <header className="fixed w-full px-[30px] lg:px[0px] z-50 h-[100px] lg:h-[140px]">
+    <motion.header
+      variants={fadeIn('down', 0.3)}
+      initial="hidden"
+      whileInView={'show'}
+      viewport={{ once: false, amount: 0.3 }}
+      className="fixed w-full px-[30px] lg:px[0px] z-50 h-[100px] lg:h-[140px]">
       <div className="flex w-full justify-between lg:items-center lg:max-w-[1600px] lg:mx-auto">
         <div className="">
           <a
@@ -115,6 +120,6 @@ export default function Header() {
           <a href="https://www.facebook.com/kazel.deligero/" target="_blank" rel="noreferrer" className="hover:scale-125 duration-200"><FaFacebookSquare className='w-10 h-10' /></a>
         </div >
       </div >
-    </header >
+    </motion.header >
   )
 }

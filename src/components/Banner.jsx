@@ -11,7 +11,7 @@ export default function Banner() {
         <div className='flex flex-col gap-y-8 lg:flex-row lg:items-center lg:gap-x-4'>
           {/* image */}
           <motion.div
-            variants={fadeIn('down', 0.3)}
+            variants={fadeIn('left', 0.3)}
             initial='hidden'
             whileInView={'show'}
             viewport={{ once: false, amount: 0.7 }}
