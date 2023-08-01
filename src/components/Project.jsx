@@ -34,39 +34,39 @@ export default function Project() {
             viewport={{ once: false, amount: 0.3 }}
             className="flex flex-col gap-y-2">
             <div>
-              <h2 className="h2 leading-tight text-accent mb-0 px-6">
+              <h2 className="lg:h2 leading-tight text-accent mb-0 px-6">
                 My Projects at Avion School
               </h2>
             </div>
 
             {/*  active preview */}
-            <div className="w-full lg:w-[1200px] lg:h-[550px] relative flex flex-col justify-center items-center p-6 mx-auto">
-              <div className="group relative overflow-hidden rounded-2xl m-18">
+            <div className="w-full lg:w-[1200px] lg:h-[550px] relative flex flex-col justify-center items-center lg:p-6 p-2 mx-auto">
+              <div className="group relative overflow-hidden rounded-2xl m-18 my-12">
                 <div className="group-hover:bg-black/90 w-full h-full absolute z-40 transition-all duration-300 p-2"></div>
                 <img className="group-hover:scale-125 transition-all duration-500" src={data[currentIndex].img} alt="/" />
-                <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
-                  <span className="text-accent text-3xl">{data[currentIndex].tools}</span>
+                <div className="absolute -bottom-full lg:left-12 left-4 group-hover:bottom-24 transition-all duration-500 z-50">
+                  <span className="text-accent lg:text-3xl text-[16px]">{data[currentIndex].tools}</span>
                 </div>
-                <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-500 z-50">
-                  <span className="text-2xl text-white">{data[currentIndex].name}</span>
+                <div className="absolute -bottom-full lg:left-12 left-4 group-hover:bottom-14 transition-all duration-500 z-50">
+                  <span className="lg:text-2xl text-sm text-white">{data[currentIndex].name}</span>
                 </div>
-                <div className="absolute -bottom-full right-12 group-hover:bottom-16 transition-all duration-500 z-50">
-                  <div className="flex-row w-full flex gap-4">
+                <div className="absolute -bottom-full right-10 lg:right-12 lg:group-hover:bottom-16 group-hover:bottom-4 transition-all duration-500 z-50">
+                  <div className="flex-row w-full flex lg:gap-4 gap-2">
                     <a
                       href={data[currentIndex].live}
                       target="_blank"
                       rel="noreferrer"
-                      className="flex flex-row w-[200px] h-[50px] justify-center items-center text-background bg-accent rounded-lg hover:scale-105 active:bg-primary duration-300 ease-in-out">
+                      className="flex flex-row lg:w-[200px] lg:h-[50px] w-[150px] h-[30px] justify-center items-center text-background bg-accent rounded-lg hover:scale-105 active:bg-primary duration-300 ease-in-out">
                       <FaExternalLinkAlt className="mx-2" />
-                      <p> Preview Link</p>
+                      <p className="text-sm lg:text-lg"> Preview Link</p>
                     </a>
                     <a
                       href={data[currentIndex].sc}
                       target="_blank"
                       rel="noreferrer"
-                      className="flex flex-row w-[200px] h-[50px] justify-center items-center text-background bg-accent rounded-lg hover:scale-105 active:bg-primary duration-300 ease-in-out">
+                      className="flex flex-row lg:w-[200px] lg:h-[50px]  w-[150px] h-[30px] justify-center items-center text-background bg-accent rounded-lg hover:scale-105 active:bg-primary duration-300 ease-in-out">
                       <FaGithub className="mx-2" />
-                      <p>Source Code</p>
+                      <p className="text-sm lg:text-lg">Source Code</p>
                     </a>
                   </div>
                 </div>
@@ -86,7 +86,7 @@ export default function Project() {
                 className={`${currentIndex === 0 ? "" : "group-hover/slider:opacity-100"} opacity-10 absolute h-full py-11 top-[50%] translate-x-10 translate-y-[-50%] -left-10 text-2xl rounded-l-lg p-2 bg-black/20 text-white cursor-pointer z-40 active:bg-white duration-300 ease-in-out`}>
                 <FaAngleLeft size={30} />
               </button>
-              <div id="slider" className="w-full h-full overflow-x-scroll scroll whitespace-nowrap scroll-smooth scrollbar-hide space-x-6 rounded-xl">
+              <div id="slider" className="w-full h-full overflow-x-scroll scroll whitespace-nowrap scroll-smooth scrollbar-hide space-x-6 lg:px-0 px-6 rounded-xl">
                 {data.map((item, index) => {
                   return (
                     <img
