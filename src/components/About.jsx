@@ -29,7 +29,7 @@ export default function About() {
                 to="project"
                 smooth={true}
                 spy={true}
-                className="cursor-pointer py-[18px] px-[50px] h-[42px] flex items-center justify-center text-base uppercase font-secondary font-semibold bg-primary text-secondary gap-1 mb-4 lg:mb-0 hover:bg-accent">
+                className="cursor-pointer py-[18px] px-[50px] h-[42px] flex items-center justify-center text-base uppercase font-secondary font-semibold bg-primary text-background gap-1 mb-4 lg:mb-0 hover:bg-accent">
                 View my projects <TiExport />
               </Link>
               <a href={resume} download="Kazel Deligero (Resume)" className="py-[18px] px-[50px] h-[42px] flex items-center justify-center text-base uppercase font-secondary font-semibold  text-text border border-accent gap-1 hover:border-secondary">Download CV<TiDownload /></a>
