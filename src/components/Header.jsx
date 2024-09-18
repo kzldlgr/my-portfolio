@@ -6,59 +6,18 @@ import { useCycle } from "framer-motion";
 import { useRef } from "react";
 import { useDimensions } from "../variant";
 import { MenuToggle } from '../helpers/MenuToggle';
-import { Navigation } from './Navigation';
+// import { Navigation } from './Navigation';
 import { FaGithubSquare, FaFacebookSquare, FaLinkedin } from "react-icons/fa";
 
-const sidebar = {
-  open: (height = 1000) => ({
-    clipPath: `circle(${height * 2 + 300}px at 80px 40px)`,
-    transition: {
-      type: "spring",
-      stiffness: 20,
-      restDelta: 2
-    }
-  }),
-  closed: {
-    clipPath: "circle(20px at 158px 40px )",
-    transition: {
-      delay: 0.5,
-      type: "spring",
-      stiffness: 400,
-      damping: 40
-    }
-  }
-};
+
 
 export default function Header() {
-  const [isOpen, toggleOpen] = useCycle(false, true);
   const containerRef = useRef(null);
-  const { height } = useDimensions(containerRef);
 
   return (
-    <header className="fixed w-full px-[30px] lg:px[0px] z-50 h-[100px] lg:h-[140px]">
-      <div className="flex w-full justify-between lg:items-center lg:max-w-[1600px] lg:mx-auto">
-        <div className="">
-          <a
-            to={'/'}
-            className="max-w-[100px] flex flex-row gap-2 items-center"
-          >
-            <img src={Logo} alt="" className="w-[100%] h-[100%]" />
-          </a>
-        </div>
-        <div className="my-8 lg:hidden">
-          <motion.nav
-            initial={false}
-            animate={isOpen ? "open" : "closed"}
-            custom={height}
-            ref={containerRef}
-            className='flex justify-end'
-          >
-            <motion.div className="absolute top-0 right-0 -z-0 h-screen w-[200px] bg-primary" variants={sidebar} />
-            <Navigation />
-            <MenuToggle toggle={() => toggleOpen()} />
-          </motion.nav>
-        </div>
-        <div className="hidden xl:flex gap-x-6 font-semibold">
+    <header className="fixed w-full items-center justify-center flex h-16 border-b-2 bg-background z-50">
+      <div className="flex w-full justify-between mx-72 h-full">
+        <div className="flex flex-row">
           <Link
             to='home'
             activeClass="active-nav"
@@ -109,10 +68,10 @@ export default function Header() {
             Contact
           </Link>
         </div>
-        <div className='flex-row gap-2 items-center justify-center text-accent hidden lg:flex'>
-          <a href="https://github.com/kzldlgr" target="_blank" rel="noreferrer" className="hover:scale-125 duration-200"><FaGithubSquare className='w-10 h-10' /></a>
-          <a href="https://www.linkedin.com/in/kazeldeligero/" target="_blank" rel="noreferrer" className="hover:scale-125 duration-200"><FaLinkedin className='w-10 h-10' /></a>
-          <a href="https://www.facebook.com/kazel.deligero/" target="_blank" rel="noreferrer" className="hover:scale-125 duration-200"><FaFacebookSquare className='w-10 h-10' /></a>
+        <div className='flex flex-row align-middle items-center text-primary'>
+          <a href="https://github.com/kzldlgr" target="_blank" rel="noreferrer" className="hover:scale-105 duration-200"><FaGithubSquare className='w-10 h-10' /></a>
+          <a href="https://www.linkedin.com/in/kazeldeligero/" target="_blank" rel="noreferrer" className="hover:scale-105 duration-200"><FaLinkedin className='w-10 h-10' /></a>
+          <a href="https://www.facebook.com/kazel.deligero/" target="_blank" rel="noreferrer" className="hover:scale-105 duration-200"><FaFacebookSquare className='w-10 h-10' /></a>
         </div >
       </div >
     </header >

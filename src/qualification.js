@@ -2,7 +2,7 @@ export default [
   {
     id: 4,
     name: 'Avion School',
-    position: 'Full Stack Web Developer',
+    position: 'Full Stack Web Developer Course',
     date: 'Sept 2022 - May 2023',
     type: 'education',
   },

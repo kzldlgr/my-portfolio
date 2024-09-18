@@ -2,27 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
-.selected,
-.active {
-  background: #316290;
-  color: #fff;
-}
-
-.active {
-  color: #fff;
-  padding: 1rem;
-  border-radius: 1px;
-}
 
 .selected,
 .active-nav {
-  background: #316290;
+  color: #3dc463;
 }
 
-.active-nav {
-  color: #fff;
-  padding: 1rem;
-  border-radius: 10%;
+.active-nav::after {
+  content: "";
+  border-bottom: 3px solid;
+  position: absolute;
+  width: 100%;
 }
 
 @layer base {
@@ -45,19 +35,19 @@
     @apply py-8 lg:py-24 lg:h-screen flex items-center;
   }
   .nav{
-    @apply relative text-text font-bold font-primary tracking-[1px] hover:text-[#316290] cursor-pointer w-full px-4 h-[60px] flex items-center justify-center active:scale-110 z-30;
+    @apply relative text-text font-bold font-primary tracking-[1px] hover:text-primary cursor-pointer w-full px-4 h-[60px] flex items-center justify-center active:scale-110 z-30;
   }
   .nav::after{
-    @apply content-[''] absolute bg-[#316290] h-[3px] w-[0%] left-0 -bottom-[5px] rounded-xl duration-300 active:text-text;
+    @apply content-[''] absolute bg-primary h-[3px] w-[0%] left-0 -bottom-[5px] rounded-xl duration-300 active:text-text;
   }
   .nav:hover::after{
     @apply w-[100%]
   }  
   .nav-mobile{
-    @apply relative text-text font-bold font-primary tracking-[1px] hover:text-[#316290] cursor-pointer w-[180px] px-4 h-[60px] flex items-center justify-center active:scale-110 z-30;
+    @apply relative text-text font-bold font-primary tracking-[1px] hover:text-primary cursor-pointer w-[180px] px-4 h-[60px] flex items-center justify-center active:scale-110 z-30;
   }
   .nav-mobile::after{
-    @apply content-[''] absolute bg-[#316290] h-[3px] w-[0%] left-0 -bottom-[5px] rounded-xl duration-300 active:text-text;
+    @apply content-[''] absolute bg-primary h-[3px] w-[0%] left-0 -bottom-[5px] rounded-xl duration-300 active:text-text;
   }
   .nav-mobile:hover::after{
     @apply w-[100%]

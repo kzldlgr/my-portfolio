@@ -22,16 +22,17 @@ export default {
     },
     extend: {
       colors: {
-        'text': '#26190d',
-        'background': '#fbf7f4',
-        'primary': '#316290',
-        'secondary': '#f2e5d9',
-        'accent': '#4182be',
+      'text': '#0b180f',
+      'background': '#f8fcf9',
+      'primary': '#3dc463',
+      'secondary': '#96e6ac',
+      'accent': '#57e17f',
       },
       backgroundImage: {
         roadmap: "url('./assets/image/rocket.gif')",
         portfolio: "url('./assets/image/bg1.jpg')",
-        about: "url('./assets/image/about.jpg')"
+        about: "url('./assets/image/about.jpg')",
+        bghome: "url('./assets/image/HomeBackground.jfif')"
       },
     },
   },

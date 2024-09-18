@@ -35,7 +35,7 @@ export default function Qualifications() {
                     <div className={`${quali.type === 'education' ? 'lg:self-start lg:pr-8 text-end' : 'lg:pl-8 lg:ml-auto'} lg:w-[50%] w-full relative lg:py-2`}>
                       <div className={`${quali.type === 'education' ? 'lg:inset-y-0 lg:-right-3' : 'lg:inset-y-0 lg:-left-3'} hidden lg:block w-6 h-6 absolute my-auto bg-accent rounded-full`}></div>
                       <div className='border border-text rounded-xl shadow-xl bg-accent text-text flex flex-col p-1'>
-                        <h1 className='text-secondary lg:text-xl text-[16px] font-bold'>{quali.position}</h1>
+                        <h1 className='text-background lg:text-xl text-[16px] font-bold'>{quali.position}</h1>
                         <p className='text-[14px] lg:text-[18px]'>{quali.name}</p>
                         <p className={`${quali.type === 'education' ? 'justify-end' : 'justify-start'} flex text-[14px] lg:text-[16px]`}><TiCalendarOutline className='mr-1 mt-3 lg:mt-2'/>{quali.date}</p>
                       </div>

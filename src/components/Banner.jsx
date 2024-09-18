@@ -10,12 +10,19 @@ export default function Banner() {
       <div className="container mx-auto z-30">
         <div className='flex flex-col gap-y-8 lg:flex-row lg:items-center lg:gap-x-4'>
           {/* image */}
+          <motion.div 
+          variants={fadeIn('right', 0.3)}
+          initial='hidden'
+          whileInView={'show'}
+          viewport={{ once: false, amount: 0.7 }}
+          className='bg-secondary absolute w-[450px] h-[920px] left-62 block '>
+          </motion.div>
           <motion.div
             variants={fadeIn('left', 0.3)}
             initial='hidden'
             whileInView={'show'}
             viewport={{ once: false, amount: 0.7 }}
-            className='hidden lg:flex flex-1 max-w-[320px] lg:max-w-[1000px] overflow-hidden'>
+            className='hidden lg:flex flex-1 max-w-[320px] lg:max-w-[1000px] overflow-hidden z-20'>
             <motion.img
               whileHover={{ scale: 1.1 }}
               transition={transition1}
@@ -67,7 +74,7 @@ export default function Banner() {
             </motion.div>
           </div>
         </div>
-      </div>
+        </div>
     </section >
   )
 }

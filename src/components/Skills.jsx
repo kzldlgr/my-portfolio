@@ -80,8 +80,8 @@ export default function Skills() {
             initial='hidden'
             whileInView={'show'}
             viewport={{ once: false, amount: 0.7 }}
-            className='hidden lg:block flex-1 flex-col text-center justify-center bg-primary/20 py-6 rounded-l-lg'>
-            <h1 className='h2 text-accent'>Front end</h1>
+            className='hidden lg:block flex-1 flex-col text-center justify-center bg-secondary py-6 rounded-l-lg'>
+            <h1 className='h2 text-text'>Front end</h1>
             <div className="grid grid-cols-3 gap-y-4">
               {frontEndArray.map((ski, index) => {
                 return (
@@ -108,8 +108,8 @@ export default function Skills() {
             initial='hidden'
             whileInView={'show'}
             viewport={{ once: false, amount: 0.7 }}
-            className='hidden lg:block flex-1 flex-col text-center justify-center bg-primary/20 py-6'>
-            <h1 className='h2 text-accent'>Back end</h1>
+            className='hidden lg:block flex-1 flex-col text-center justify-center bg-primary py-6'>
+            <h1 className='h2 text-text'>Back end</h1>
             <div className="grid grid-cols-3 gap-y-4">
               {backEndArray.map((ski, index) => {
                 return (
@@ -136,8 +136,8 @@ export default function Skills() {
             initial='hidden'
             whileInView={'show'}
             viewport={{ once: false, amount: 0.7 }}
-            className='hidden lg:block flex-1 flex-col text-center justify-center bg-primary/20 py-6 rounded-r-lg'>
-            <h1 className='h2 text-accent'>Others</h1>
+            className='hidden lg:block flex-1 flex-col text-center justify-center bg-secondary py-6 rounded-r-lg'>
+            <h1 className='h2 text-text'>Others</h1>
             <div className="grid grid-cols-3 gap-y-4">
               {othersArray.map((ski, index) => {
                 return (

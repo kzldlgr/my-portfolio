@@ -32,16 +32,16 @@ export default function Project() {
             initial="hidden"
             whileInView={'show'}
             viewport={{ once: false, amount: 0.3 }}
-            className="flex flex-col gap-y-2">
+            className="flex flex-col gap-y-1">
             <div>
-              <h2 className="lg:h2 leading-tight text-accent mb-0 px-6">
+              <h2 className="lg:h2 leading-tight text-accent mb-0 px-2">
                 My Projects at Avion School
               </h2>
             </div>
 
             {/*  active preview */}
-            <div className="w-full lg:w-[1200px] lg:h-[550px] relative flex flex-col justify-center items-center lg:p-6 p-2 mx-auto">
-              <div className="group relative overflow-hidden rounded-2xl m-18 my-12">
+            <div className="w-full lg:w-full lg:h-[550px] relative flex flex-col justify-center items-center lg:p-2 mx-auto">
+              <div className="group relative overflow-hidden rounded-2xl">
                 <div className="group-hover:bg-black/90 w-full h-full absolute z-40 transition-all duration-300 p-2"></div>
                 <img className="group-hover:scale-125 transition-all duration-500" src={data[currentIndex].img} alt="/" />
                 <div className="absolute -bottom-full lg:left-12 left-4 group-hover:bottom-24 transition-all duration-500 z-50">
@@ -83,7 +83,7 @@ export default function Project() {
               {/* left arrow */}
               <button
                 onClick={prevSlide}
-                className={`${currentIndex === 0 ? "" : "group-hover/slider:opacity-100"} opacity-10 absolute h-full py-11 top-[50%] translate-x-10 translate-y-[-50%] -left-10 text-2xl rounded-l-lg p-2 bg-black/20 text-white cursor-pointer z-40 active:bg-white duration-300 ease-in-out`}>
+                className={`${currentIndex === 0 ? "" : "group-hover/slider:opacity-100"} opacity-40 absolute h-full py-11 top-[50%] translate-x-10 translate-y-[-50%] -left-10 text-2xl rounded-l-lg p-2 bg-secondary text-background cursor-pointer z-40 hover:bg-primary active:scale-125 duration-300 ease-in-out`}>
                 <FaAngleLeft size={30} />
               </button>
               <div id="slider" className="w-full h-full overflow-x-scroll scroll whitespace-nowrap scroll-smooth scrollbar-hide space-x-6 lg:px-0 px-6 rounded-xl">
@@ -94,7 +94,7 @@ export default function Project() {
                       src={item.img}
                       alt=""
                       onClick={() => setCurrentIndex(item.id)}
-                      className={`${currentIndex === item.id ? "" : "blur-sm"} w-[220px] inline-block p-2 cursor-pointer hover:scale-105 ease-in-out duration-300 rounded-xl`}
+                      className={`${currentIndex === item.id ? "bg-primary" : ""} w-[220px] inline-block p-2 cursor-pointer hover:scale-105 ease-in-out duration-300 rounded-xl`}
                     />
                   )
                 })}
@@ -102,7 +102,7 @@ export default function Project() {
               {/* right arrow */}
               <button
                 onClick={nextSlide}
-                className={`${currentIndex === data.length - 1 ? "" : "group-hover/slider:opacity-100"} opacity-10 absolute h-full py-11 top-[50%] translate-x-10 translate-y-[-50%] right-10 text-2xl rounded-r-lg p-2 bg-black/20 text-white cursor-pointer z-40 active:bg-white duration-300 ease-in-out`}>
+                className={`${currentIndex === data.length - 1 ? "" : "group-hover/slider:opacity-100"} opacity-40 absolute h-full py-11 top-[50%] translate-x-10 translate-y-[-50%] right-10 text-2xl rounded-r-lg p-2 bg-secondary text-background cursor-pointer z-40 hover:bg-primary active:scale-125 duration-300 ease-in-out`}>
                 <FaAngleRight size={30} />
               </button>
             </motion.div>
